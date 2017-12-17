@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SlYf0ONwEeeHQtdOPsB5Og" name="RootElement">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_SqUDIONwEeeHQtdOPsB5Og" name="Activity1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_SriLIONwEeeHQtdOPsB5Og" name="Interaction1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_Srz38ONwEeeHQtdOPsB5Og" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_Sr_eIONwEeeHQtdOPsB5Og" name="Region1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzJgwONwEeeHQtdOPsB5Og" memberEnd="_WzJgw-NwEeeHQtdOPsB5Og _WzJgxONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzJgweNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzJgwuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzJgw-NwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzJgwONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzJgxONwEeeHQtdOPsB5Og" name="usunięcie moderatora" type="_WzSqsONwEeeHQtdOPsB5Og" association="_WzJgwONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzKH0ONwEeeHQtdOPsB5Og" memberEnd="_WzKH0-NwEeeHQtdOPsB5Og _WzKH1ONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzKH0eNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzKH0uNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKH0-NwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzKH0ONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKH1ONwEeeHQtdOPsB5Og" name="dodanie prenumeraty" type="_WzNyNuNwEeeHQtdOPsB5Og" association="_WzKH0ONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzKu4ONwEeeHQtdOPsB5Og" memberEnd="_WzKu4-NwEeeHQtdOPsB5Og _WzKu5ONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzKu4eNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzKu4uNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu4-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzKu4ONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu5ONwEeeHQtdOPsB5Og" name="wykupienie prenumeraty" type="_WzNLIONwEeeHQtdOPsB5Og" association="_WzKu4ONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzKu5eNwEeeHQtdOPsB5Og" memberEnd="_WzKu6ONwEeeHQtdOPsB5Og _WzKu6eNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzKu5uNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzKu5-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu6ONwEeeHQtdOPsB5Og" name="zaloguj administratora" type="_WzPnYeNwEeeHQtdOPsB5Og" association="_WzKu5eNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu6eNwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzKu5eNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzLV8ONwEeeHQtdOPsB5Og" name="Zamieszczenie komentarza">
+    <extend xmi:type="uml:Extend" xmi:id="_WzLV8eNwEeeHQtdOPsB5Og" extendedCase="_WzT40uNwEeeHQtdOPsB5Og" extensionLocation="_WzT41ONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzNLIONwEeeHQtdOPsB5Og" name="Wykupienie prenumeraty"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WzNyMONwEeeHQtdOPsB5Og" name="Wydawnictwo"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzNyMeNwEeeHQtdOPsB5Og" memberEnd="_WzNyNONwEeeHQtdOPsB5Og _WzNyNeNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzNyMuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzNyM-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzNyNONwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzNyMeNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzNyNeNwEeeHQtdOPsB5Og" name="dodanie wydawnictwa" type="_WzRckONwEeeHQtdOPsB5Og" association="_WzNyMeNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzNyNuNwEeeHQtdOPsB5Og" name="Dodanie prenumeraty"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WzNyN-NwEeeHQtdOPsB5Og" name="Czytelnik Zalogowany">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WzNyOONwEeeHQtdOPsB5Og" general="_WzQ1heNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WzNyOeNwEeeHQtdOPsB5Og" name="Administrator">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WzNyOuNwEeeHQtdOPsB5Og" general="_WzNyN-NwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzOZQONwEeeHQtdOPsB5Og" memberEnd="_WzOZQ-NwEeeHQtdOPsB5Og _WzOZRONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzOZQeNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzOZQuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZQ-NwEeeHQtdOPsB5Og" name="założenie konta" type="_WzT40ONwEeeHQtdOPsB5Og" association="_WzOZQONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZRONwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzOZQONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzOZReNwEeeHQtdOPsB5Og" memberEnd="_WzOZSONwEeeHQtdOPsB5Og _WzOZSeNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzOZRuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzOZR-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZSONwEeeHQtdOPsB5Og" name="zaloguj moderatora" type="_WzRckeNwEeeHQtdOPsB5Og" association="_WzOZReNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZSeNwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzOZReNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzOZSuNwEeeHQtdOPsB5Og" memberEnd="_WzOZTeNwEeeHQtdOPsB5Og _WzOZTuNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzOZS-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzOZTONwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZTeNwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzOZSuNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZTuNwEeeHQtdOPsB5Og" name="umieszczenie artykułu darmowego" type="_WzTRxeNwEeeHQtdOPsB5Og" association="_WzOZSuNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzOZT-NwEeeHQtdOPsB5Og" memberEnd="_WzOZUuNwEeeHQtdOPsB5Og _WzOZU-NwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzOZUONwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzOZUeNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZUuNwEeeHQtdOPsB5Og" name="wyświetl dostępne prenumeraty" type="_WzQOcONwEeeHQtdOPsB5Og" association="_WzOZT-NwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZU-NwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzOZT-NwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzPAUONwEeeHQtdOPsB5Og" memberEnd="_WzPAU-NwEeeHQtdOPsB5Og _WzPAVONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPAUeNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPAUuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAU-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzPAUONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAVONwEeeHQtdOPsB5Og" name="dodanie wydawnictwa" type="_WzRckONwEeeHQtdOPsB5Og" association="_WzPAUONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzPAVeNwEeeHQtdOPsB5Og" memberEnd="_WzPAWONwEeeHQtdOPsB5Og _WzPAWeNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPAVuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPAV-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAWONwEeeHQtdOPsB5Og" name="zamieszczenie komentarza" type="_WzLV8ONwEeeHQtdOPsB5Og" association="_WzPAVeNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAWeNwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzPAVeNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPAWuNwEeeHQtdOPsB5Og" name="Wykonanie resetu"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPAW-NwEeeHQtdOPsB5Og" name="Zalogowanie czytelnika">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzPAXONwEeeHQtdOPsB5Og" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzPAXeNwEeeHQtdOPsB5Og" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPnYONwEeeHQtdOPsB5Og" name="Usunięcie wydawnictwa"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPnYeNwEeeHQtdOPsB5Og" name="Zalogowanie administratora">
+    <extend xmi:type="uml:Extend" xmi:id="_WzPnYuNwEeeHQtdOPsB5Og" extendedCase="_WzPAW-NwEeeHQtdOPsB5Og" extensionLocation="_WzPAXONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzPnY-NwEeeHQtdOPsB5Og" memberEnd="_WzPnZuNwEeeHQtdOPsB5Og _WzPnZ-NwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPnZONwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPnZeNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPnZuNwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzPnY-NwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPnZ-NwEeeHQtdOPsB5Og" name="usunięcie artykułu darmowego" type="_WzSqtuNwEeeHQtdOPsB5Og" association="_WzPnY-NwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzPnaONwEeeHQtdOPsB5Og" memberEnd="_WzPna-NwEeeHQtdOPsB5Og _WzPnbONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPnaeNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPnauNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPna-NwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzPnaONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPnbONwEeeHQtdOPsB5Og" name="wykonanie resetu" type="_WzPAWuNwEeeHQtdOPsB5Og" association="_WzPnaONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzPnbeNwEeeHQtdOPsB5Og" memberEnd="_WzPncONwEeeHQtdOPsB5Og _WzPnceNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPnbuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPnb-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPncONwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzPnbeNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPnceNwEeeHQtdOPsB5Og" name="usunięcie użytkownika" type="_WzQ1huNwEeeHQtdOPsB5Og" association="_WzPnbeNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzQOcONwEeeHQtdOPsB5Og" name="Wyświetlenie dostępnych prenumerat"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzQOceNwEeeHQtdOPsB5Og" memberEnd="_WzQOdONwEeeHQtdOPsB5Og _WzQOdeNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQOcuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQOc-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQOdONwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzQOceNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQOdeNwEeeHQtdOPsB5Og" name="umieszczenie artykułu darmowego" type="_WzTRxeNwEeeHQtdOPsB5Og" association="_WzQOceNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzQOduNwEeeHQtdOPsB5Og" memberEnd="_WzQOeeNwEeeHQtdOPsB5Og _WzQOeuNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQOd-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQOeONwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQOeeNwEeeHQtdOPsB5Og" name="wylogowanie czytelnika" type="_WzT40eNwEeeHQtdOPsB5Og" association="_WzQOduNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQOeuNwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzQOduNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzQ1gONwEeeHQtdOPsB5Og" memberEnd="_WzQ1g-NwEeeHQtdOPsB5Og _WzQ1hONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQ1geNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQ1guNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1g-NwEeeHQtdOPsB5Og" name="przeszukaj artykuły darmowe" type="_WzSDoONwEeeHQtdOPsB5Og" association="_WzQ1gONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1hONwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzQ1gONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WzQ1heNwEeeHQtdOPsB5Og" name="Czytelnik Niezalogowany"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzQ1huNwEeeHQtdOPsB5Og" name="Usunięcie użytkownika"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzQ1h-NwEeeHQtdOPsB5Og" memberEnd="_WzQ1iuNwEeeHQtdOPsB5Og _WzQ1i-NwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQ1iONwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQ1ieNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1iuNwEeeHQtdOPsB5Og" name="zaloguj czytelnika" type="_WzPAW-NwEeeHQtdOPsB5Og" association="_WzQ1h-NwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1i-NwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzQ1h-NwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzQ1jONwEeeHQtdOPsB5Og" memberEnd="_WzQ1j-NwEeeHQtdOPsB5Og _WzQ1kONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQ1jeNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQ1juNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1j-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzQ1jONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1kONwEeeHQtdOPsB5Og" name="dodanie prenumeraty" type="_WzNyNuNwEeeHQtdOPsB5Og" association="_WzQ1jONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzRckONwEeeHQtdOPsB5Og" name="Dodanie wydawnictwa"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzRckeNwEeeHQtdOPsB5Og" name="Zalogowanie moderatora">
+    <extend xmi:type="uml:Extend" xmi:id="_WzRckuNwEeeHQtdOPsB5Og" extendedCase="_WzPAW-NwEeeHQtdOPsB5Og" extensionLocation="_WzPAXeNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WzRck-NwEeeHQtdOPsB5Og" name="Moderator">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WzRclONwEeeHQtdOPsB5Og" general="_WzNyN-NwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzSDoONwEeeHQtdOPsB5Og" name="Przeszukanie artykułów darmowych">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzSDoeNwEeeHQtdOPsB5Og" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzSDouNwEeeHQtdOPsB5Og" memberEnd="_WzSDpeNwEeeHQtdOPsB5Og _WzSDpuNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzSDo-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzSDpONwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSDpeNwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzSDouNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSDpuNwEeeHQtdOPsB5Og" name="usunięcie moderatora" type="_WzSqsONwEeeHQtdOPsB5Og" association="_WzSDouNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzSqsONwEeeHQtdOPsB5Og" name="Usunięcie moderatora"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzSqseNwEeeHQtdOPsB5Og" memberEnd="_WzSqtONwEeeHQtdOPsB5Og _WzSqteNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzSqsuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzSqs-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSqtONwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzSqseNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSqteNwEeeHQtdOPsB5Og" name="usunięcie wydawnictwa" type="_WzPnYONwEeeHQtdOPsB5Og" association="_WzSqseNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzSqtuNwEeeHQtdOPsB5Og" name="Usunięcie artykułu darmowego"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzSqt-NwEeeHQtdOPsB5Og" memberEnd="_WzSquuNwEeeHQtdOPsB5Og _WzSqu-NwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzSquONwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzSqueNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSquuNwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzSqt-NwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSqu-NwEeeHQtdOPsB5Og" name="usunięcie artykułu darmowego" type="_WzSqtuNwEeeHQtdOPsB5Og" association="_WzSqt-NwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzTRwONwEeeHQtdOPsB5Og" memberEnd="_WzTRw-NwEeeHQtdOPsB5Og _WzTRxONwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzTRweNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzTRwuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRw-NwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzTRwONwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRxONwEeeHQtdOPsB5Og" name="usunięcie użytkownika" type="_WzQ1huNwEeeHQtdOPsB5Og" association="_WzTRwONwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzTRxeNwEeeHQtdOPsB5Og" name="Umieszczenie artykułu darmowego"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzTRxuNwEeeHQtdOPsB5Og" memberEnd="_WzTRyeNwEeeHQtdOPsB5Og _WzTRyuNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzTRx-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzTRyONwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRyeNwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzTRxuNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRyuNwEeeHQtdOPsB5Og" name="usunięcie wydawnictwa" type="_WzPnYONwEeeHQtdOPsB5Og" association="_WzTRxuNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzTRy-NwEeeHQtdOPsB5Og" name="Wyświetlenie reklamy">
+    <include xmi:type="uml:Include" xmi:id="_WzTRzONwEeeHQtdOPsB5Og" addition="_WzT40uNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WzTRzeNwEeeHQtdOPsB5Og" memberEnd="_WzTR0ONwEeeHQtdOPsB5Og _WzTR0eNwEeeHQtdOPsB5Og">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzTRzuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzTRz-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTR0ONwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzTRzeNwEeeHQtdOPsB5Og"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTR0eNwEeeHQtdOPsB5Og" name="wykupienie prenumeraty" type="_WzNLIONwEeeHQtdOPsB5Og" association="_WzTRzeNwEeeHQtdOPsB5Og"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40ONwEeeHQtdOPsB5Og" name="Założenie konta"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40eNwEeeHQtdOPsB5Og" name="Wylogowanie czytelnika"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40uNwEeeHQtdOPsB5Og" name="Otwarcie artykułu darmowego">
+    <extend xmi:type="uml:Extend" xmi:id="_WzT40-NwEeeHQtdOPsB5Og" extendedCase="_WzSDoONwEeeHQtdOPsB5Og" extensionLocation="_WzSDoeNwEeeHQtdOPsB5Og"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzT41ONwEeeHQtdOPsB5Og" name="ExtensionPoint1"/>
+  </packagedElement>
+</uml:Model>
