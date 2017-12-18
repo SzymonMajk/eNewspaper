@@ -26,13 +26,6 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu4-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzKu4ONwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu5ONwEeeHQtdOPsB5Og" name="wykupienie prenumeraty" type="_WzNLIONwEeeHQtdOPsB5Og" association="_WzKu4ONwEeeHQtdOPsB5Og"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzKu5eNwEeeHQtdOPsB5Og" memberEnd="_WzKu6ONwEeeHQtdOPsB5Og _WzKu6eNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzKu5uNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzKu5-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu6ONwEeeHQtdOPsB5Og" name="zaloguj administratora" type="_WzPnYeNwEeeHQtdOPsB5Og" association="_WzKu5eNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu6eNwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzKu5eNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzLV8ONwEeeHQtdOPsB5Og" name="Zamieszczenie komentarza">
     <extend xmi:type="uml:Extend" xmi:id="_WzLV8eNwEeeHQtdOPsB5Og" extendedCase="_WzT40uNwEeeHQtdOPsB5Og" extensionLocation="_WzT41ONwEeeHQtdOPsB5Og"/>
   </packagedElement>
@@ -58,13 +51,6 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZQ-NwEeeHQtdOPsB5Og" name="założenie konta" type="_WzT40ONwEeeHQtdOPsB5Og" association="_WzOZQONwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZRONwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzOZQONwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzOZReNwEeeHQtdOPsB5Og" memberEnd="_WzOZSONwEeeHQtdOPsB5Og _WzOZSeNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzOZRuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzOZR-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZSONwEeeHQtdOPsB5Og" name="zaloguj moderatora" type="_WzRckeNwEeeHQtdOPsB5Og" association="_WzOZReNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZSeNwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzOZReNwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzOZSuNwEeeHQtdOPsB5Og" memberEnd="_WzOZTeNwEeeHQtdOPsB5Og _WzOZTuNwEeeHQtdOPsB5Og">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzOZS-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
@@ -225,5 +211,35 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40uNwEeeHQtdOPsB5Og" name="Otwarcie artykułu darmowego">
     <extend xmi:type="uml:Extend" xmi:id="_WzT40-NwEeeHQtdOPsB5Og" extendedCase="_WzSDoONwEeeHQtdOPsB5Og" extensionLocation="_WzSDoeNwEeeHQtdOPsB5Og"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzT41ONwEeeHQtdOPsB5Og" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_MJcBwOQNEeehxfWeQNRiBQ" name="Usunięcie prenumeraty"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qt6SgOQNEeehxfWeQNRiBQ" memberEnd="_QuHt4OQNEeehxfWeQNRiBQ _QuIU8OQNEeehxfWeQNRiBQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QuFRoOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuF4sOQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QuHt4OQNEeehxfWeQNRiBQ" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_Qt6SgOQNEeehxfWeQNRiBQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QuIU8OQNEeehxfWeQNRiBQ" name="usunięcie prenumeraty" type="_MJcBwOQNEeehxfWeQNRiBQ" association="_Qt6SgOQNEeehxfWeQNRiBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RL4A4OQNEeehxfWeQNRiBQ" memberEnd="_RL5PAuQNEeehxfWeQNRiBQ _RL52EOQNEeehxfWeQNRiBQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RL5PAOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RL5PAeQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RL5PAuQNEeehxfWeQNRiBQ" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_RL4A4OQNEeehxfWeQNRiBQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RL52EOQNEeehxfWeQNRiBQ" name="usunięcie prenumeraty" type="_MJcBwOQNEeehxfWeQNRiBQ" association="_RL4A4OQNEeehxfWeQNRiBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VMkPIOQNEeehxfWeQNRiBQ" name="Dodanie moderatora"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZzzgAOQNEeehxfWeQNRiBQ" memberEnd="_Zz0uIeQNEeehxfWeQNRiBQ _Zz1VMOQNEeehxfWeQNRiBQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Zz0HEOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Zz0uIOQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Zz0uIeQNEeehxfWeQNRiBQ" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_ZzzgAOQNEeehxfWeQNRiBQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Zz1VMOQNEeehxfWeQNRiBQ" name="dodanie moderatora" type="_VMkPIOQNEeehxfWeQNRiBQ" association="_ZzzgAOQNEeehxfWeQNRiBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_agQWUOQNEeehxfWeQNRiBQ" memberEnd="_agSLgOQNEeehxfWeQNRiBQ _agSLgeQNEeehxfWeQNRiBQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_agQ9YOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_agRkcOQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_agSLgOQNEeehxfWeQNRiBQ" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_agQWUOQNEeehxfWeQNRiBQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_agSLgeQNEeehxfWeQNRiBQ" name="dodanie moderatora" type="_VMkPIOQNEeehxfWeQNRiBQ" association="_agQWUOQNEeehxfWeQNRiBQ"/>
   </packagedElement>
 </uml:Model>
