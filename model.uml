@@ -1,45 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SlYf0ONwEeeHQtdOPsB5Og" name="RootElement">
   <packagedElement xmi:type="uml:Activity" xmi:id="_SqUDIONwEeeHQtdOPsB5Og" name="Activity1"/>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_SriLIONwEeeHQtdOPsB5Og" name="Interaction1">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_MqA_AOSsEeeljpvKH0Y25g" name="Czytelnik zalogowany" coveredBy="_k5zj0OSsEeeljpvKH0Y25g _pbsaoOSsEeeljpvKH0Y25g _5C5ZAOSsEeeljpvKH0Y25g _oF7sIOStEeeljpvKH0Y25g _rpNloOStEeeljpvKH0Y25g"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_SzAWgOSsEeeljpvKH0Y25g" name="Wydawnictwo" coveredBy="_8bgeIOStEeeljpvKH0Y25g"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_WDblcOSsEeeljpvKH0Y25g" name="Baza prenumerat" coveredBy="_k5zj0eSsEeeljpvKH0Y25g _pbrzkOSsEeeljpvKH0Y25g _UzEe4OSuEeeljpvKH0Y25g"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_ZV6p4OSsEeeljpvKH0Y25g" name="Realizator płatności" coveredBy="_5C6AEOSsEeeljpvKH0Y25g _oF7FEOStEeeljpvKH0Y25g _rpOMsOStEeeljpvKH0Y25g _7OyzYOStEeeljpvKH0Y25g _7O0okOStEeeljpvKH0Y25g _7O0BgOStEeeljpvKH0Y25g _8bf3EOStEeeljpvKH0Y25g _UzDQwOSuEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_k5zj0OSsEeeljpvKH0Y25g" name="MessageSend" covered="_MqA_AOSsEeeljpvKH0Y25g" message="_k5EkAOSsEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_k5zj0eSsEeeljpvKH0Y25g" name="MessageRecv" covered="_WDblcOSsEeeljpvKH0Y25g" message="_k5EkAOSsEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pbrzkOSsEeeljpvKH0Y25g" name="MessageSend0" covered="_WDblcOSsEeeljpvKH0Y25g" message="_pbqlcOSsEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pbsaoOSsEeeljpvKH0Y25g" name="MessageRecv0" covered="_MqA_AOSsEeeljpvKH0Y25g" message="_pbqlcOSsEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5C5ZAOSsEeeljpvKH0Y25g" name="MessageSend1" covered="_MqA_AOSsEeeljpvKH0Y25g" message="_5C4K4OSsEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5C6AEOSsEeeljpvKH0Y25g" name="MessageRecv1" covered="_ZV6p4OSsEeeljpvKH0Y25g" message="_5C4K4OSsEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oF7FEOStEeeljpvKH0Y25g" name="MessageSend2" covered="_ZV6p4OSsEeeljpvKH0Y25g" message="_oF528OStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oF7sIOStEeeljpvKH0Y25g" name="MessageRecv2" covered="_MqA_AOSsEeeljpvKH0Y25g" message="_oF528OStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rpNloOStEeeljpvKH0Y25g" name="MessageSend3" covered="_MqA_AOSsEeeljpvKH0Y25g" message="_rpMXgOStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rpOMsOStEeeljpvKH0Y25g" name="MessageRecv3" covered="_ZV6p4OSsEeeljpvKH0Y25g" message="_rpMXgOStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7OyzYOStEeeljpvKH0Y25g" name="ActionExecSpecStart" covered="_ZV6p4OSsEeeljpvKH0Y25g" execution="_7O0BgOStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_7O0BgOStEeeljpvKH0Y25g" name="ActionExecSpec" covered="_ZV6p4OSsEeeljpvKH0Y25g" finish="_7O0okOStEeeljpvKH0Y25g" start="_7OyzYOStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7O0okOStEeeljpvKH0Y25g" name="ActionExecSpecFinish" covered="_ZV6p4OSsEeeljpvKH0Y25g" execution="_7O0BgOStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8bf3EOStEeeljpvKH0Y25g" name="MessageSend4" covered="_ZV6p4OSsEeeljpvKH0Y25g" message="_8beo8OStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8bgeIOStEeeljpvKH0Y25g" name="MessageRecv4" covered="_SzAWgOSsEeeljpvKH0Y25g" message="_8beo8OStEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UzDQwOSuEeeljpvKH0Y25g" name="MessageSend5" covered="_ZV6p4OSsEeeljpvKH0Y25g" message="_UzA0gOSuEeeljpvKH0Y25g"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UzEe4OSuEeeljpvKH0Y25g" name="MessageRecv5" covered="_WDblcOSsEeeljpvKH0Y25g" message="_UzA0gOSuEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_k5EkAOSsEeeljpvKH0Y25g" name="wybierzPrenumerate(id)" receiveEvent="_k5zj0eSsEeeljpvKH0Y25g" sendEvent="_k5zj0OSsEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_pbqlcOSsEeeljpvKH0Y25g" name="zwróćStronęZPrenumerat()" receiveEvent="_pbsaoOSsEeeljpvKH0Y25g" sendEvent="_pbrzkOSsEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_5C4K4OSsEeeljpvKH0Y25g" name="złóżZamówienie(okres,typ,ilość)" receiveEvent="_5C6AEOSsEeeljpvKH0Y25g" sendEvent="_5C5ZAOSsEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_oF528OStEeeljpvKH0Y25g" name="zwróćStronęZPodsumowaniem()" receiveEvent="_oF7sIOStEeeljpvKH0Y25g" sendEvent="_oF7FEOStEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_rpMXgOStEeeljpvKH0Y25g" name="zatwierdz(id_klienta)" receiveEvent="_rpOMsOStEeeljpvKH0Y25g" sendEvent="_rpNloOStEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_8beo8OStEeeljpvKH0Y25g" name="wyslijPotwierdzenieWplaty()" receiveEvent="_8bgeIOStEeeljpvKH0Y25g" sendEvent="_8bf3EOStEeeljpvKH0Y25g"/>
-    <message xmi:type="uml:Message" xmi:id="_UzA0gOSuEeeljpvKH0Y25g" name="zaktualizujStatystyki(id, ilosc)" messageSort="asynchCall" receiveEvent="_UzEe4OSuEeeljpvKH0Y25g" sendEvent="_UzDQwOSuEeeljpvKH0Y25g"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_Srz38ONwEeeHQtdOPsB5Og" name="StateMachine1">
     <region xmi:type="uml:Region" xmi:id="_Sr_eIONwEeeHQtdOPsB5Og" name="Region1"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzJgwONwEeeHQtdOPsB5Og" memberEnd="_WzJgw-NwEeeHQtdOPsB5Og _WzJgxONwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzJgweNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzJgwuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzJgw-NwEeeHQtdOPsB5Og" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_WzJgwONwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzJgxONwEeeHQtdOPsB5Og" name="usunięcie moderatora" type="_WzSqsONwEeeHQtdOPsB5Og" association="_WzJgwONwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzKH0ONwEeeHQtdOPsB5Og" memberEnd="_WzKH0-NwEeeHQtdOPsB5Og _WzKH1ONwEeeHQtdOPsB5Og">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzKH0eNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
@@ -55,47 +18,9 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu4-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzKu4ONwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzKu5ONwEeeHQtdOPsB5Og" name="wykupienie prenumeraty" type="_WzNLIONwEeeHQtdOPsB5Og" association="_WzKu4ONwEeeHQtdOPsB5Og"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzLV8ONwEeeHQtdOPsB5Og" name="Zamieszczenie komentarza" classifierBehavior="_bR-mkOSvEeeljpvKH0Y25g">
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_bR-mkOSvEeeljpvKH0Y25g" name="Interaction1">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_ibtpYOSvEeeljpvKH0Y25g" name="Czytelnik Zalogowany" coveredBy="_4wt8geSvEeeljpvKH0Y25g"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_vtx8YOSvEeeljpvKH0Y25g" name="Menedżer Komentarzy" coveredBy="_4wujkOSvEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4wt8geSvEeeljpvKH0Y25g" name="MessageSend" covered="_ibtpYOSvEeeljpvKH0Y25g" message="_4wt8gOSvEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4wujkOSvEeeljpvKH0Y25g" name="MessageRecv" covered="_vtx8YOSvEeeljpvKH0Y25g" message="_4wt8gOSvEeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_4wt8gOSvEeeljpvKH0Y25g" name="umiescKomentarz(id_klienta,tresc, data)" messageSort="asynchCall" receiveEvent="_4wujkOSvEeeljpvKH0Y25g" sendEvent="_4wt8geSvEeeljpvKH0Y25g"/>
-    </ownedBehavior>
-    <extend xmi:type="uml:Extend" xmi:id="_WzLV8eNwEeeHQtdOPsB5Og" extendedCase="_WzT40uNwEeeHQtdOPsB5Og" extensionLocation="_WzT41ONwEeeHQtdOPsB5Og"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzNLIONwEeeHQtdOPsB5Og" name="Wykupienie prenumeraty"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_WzNyMONwEeeHQtdOPsB5Og" name="Wydawnictwo"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzNyMeNwEeeHQtdOPsB5Og" memberEnd="_WzNyNONwEeeHQtdOPsB5Og _WzNyNeNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzNyMuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzNyM-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzNyNONwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzNyMeNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzNyNeNwEeeHQtdOPsB5Og" name="dodanie wydawnictwa" type="_WzRckONwEeeHQtdOPsB5Og" association="_WzNyMeNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzNyNuNwEeeHQtdOPsB5Og" name="Dodanie prenumeraty" classifierBehavior="_tcddMOSzEeeljpvKH0Y25g">
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_tcddMOSzEeeljpvKH0Y25g" name="Interaction1">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_xK1MYOSzEeeljpvKH0Y25g" name="Wydawnictwo" coveredBy="_Eq7u8OS0EeeljpvKH0Y25g _MwMwcOS1EeeljpvKH0Y25g"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_0CU98OSzEeeljpvKH0Y25g" name="Baza prenumerat" coveredBy="_Eq7u8eS0EeeljpvKH0Y25g _pl_FcOS0EeeljpvKH0Y25g _C6Fm8OS1EeeljpvKH0Y25g _HSiN4OS1EeeljpvKH0Y25g _HSiN4eS1EeeljpvKH0Y25g _MwMJYOS1EeeljpvKH0Y25g"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_19XuUOSzEeeljpvKH0Y25g" name="Moderator" coveredBy="_pl_FceS0EeeljpvKH0Y25g _C6E_4OS1EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Eq7u8OS0EeeljpvKH0Y25g" name="MessageSend" covered="_xK1MYOSzEeeljpvKH0Y25g" message="_Eq7H4OS0EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Eq7u8eS0EeeljpvKH0Y25g" name="MessageRecv" covered="_0CU98OSzEeeljpvKH0Y25g" message="_Eq7H4OS0EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pl_FcOS0EeeljpvKH0Y25g" name="MessageSend0" covered="_0CU98OSzEeeljpvKH0Y25g" message="_pl-eYOS0EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pl_FceS0EeeljpvKH0Y25g" name="MessageRecv0" covered="_19XuUOSzEeeljpvKH0Y25g" message="_pl-eYOS0EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_C6E_4OS1EeeljpvKH0Y25g" name="MessageSend1" covered="_19XuUOSzEeeljpvKH0Y25g" message="_C6EY0OS1EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_C6Fm8OS1EeeljpvKH0Y25g" name="MessageRecv1" covered="_0CU98OSzEeeljpvKH0Y25g" message="_C6EY0OS1EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HSiN4OS1EeeljpvKH0Y25g" name="MessageSend2" covered="_0CU98OSzEeeljpvKH0Y25g" message="_HShm0OS1EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HSiN4eS1EeeljpvKH0Y25g" name="MessageRecv2" covered="_0CU98OSzEeeljpvKH0Y25g" message="_HShm0OS1EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MwMJYOS1EeeljpvKH0Y25g" name="MessageSend3" covered="_0CU98OSzEeeljpvKH0Y25g" message="_MwLiUOS1EeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MwMwcOS1EeeljpvKH0Y25g" name="MessageRecv3" covered="_xK1MYOSzEeeljpvKH0Y25g" message="_MwLiUOS1EeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_Eq7H4OS0EeeljpvKH0Y25g" name="dodajPrenumerate(id_wydawnictwa,tytul,opis,cena,typ)" receiveEvent="_Eq7u8eS0EeeljpvKH0Y25g" sendEvent="_Eq7u8OS0EeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_pl-eYOS0EeeljpvKH0Y25g" name="poprosOZatwierdzenie(id_prenumeraty)" receiveEvent="_pl_FceS0EeeljpvKH0Y25g" sendEvent="_pl_FcOS0EeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_C6EY0OS1EeeljpvKH0Y25g" name="potwierdz(id_prenumeraty)" receiveEvent="_C6Fm8OS1EeeljpvKH0Y25g" sendEvent="_C6E_4OS1EeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_HShm0OS1EeeljpvKH0Y25g" name="zatwierdzWBazie(id_prenumeraty)" receiveEvent="_HSiN4eS1EeeljpvKH0Y25g" sendEvent="_HSiN4OS1EeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_MwLiUOS1EeeljpvKH0Y25g" name="wyslijPotwierdzenieDodania(tytul)" receiveEvent="_MwMwcOS1EeeljpvKH0Y25g" sendEvent="_MwMJYOS1EeeljpvKH0Y25g"/>
-    </ownedBehavior>
-  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzNyNuNwEeeHQtdOPsB5Og" name="Dodanie prenumeraty"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_WzNyN-NwEeeHQtdOPsB5Og" name="Czytelnik Zalogowany">
     <generalization xmi:type="uml:Generalization" xmi:id="_WzNyOONwEeeHQtdOPsB5Og" general="_WzQ1heNwEeeHQtdOPsB5Og"/>
   </packagedElement>
@@ -123,28 +48,10 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZUuNwEeeHQtdOPsB5Og" name="wyświetl dostępne prenumeraty" type="_WzQOcONwEeeHQtdOPsB5Og" association="_WzOZT-NwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzOZU-NwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzOZT-NwEeeHQtdOPsB5Og"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzPAUONwEeeHQtdOPsB5Og" memberEnd="_WzPAU-NwEeeHQtdOPsB5Og _WzPAVONwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPAUeNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPAUuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAU-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzPAUONwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAVONwEeeHQtdOPsB5Og" name="dodanie wydawnictwa" type="_WzRckONwEeeHQtdOPsB5Og" association="_WzPAUONwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzPAVeNwEeeHQtdOPsB5Og" memberEnd="_WzPAWONwEeeHQtdOPsB5Og _WzPAWeNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPAVuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPAV-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAWONwEeeHQtdOPsB5Og" name="zamieszczenie komentarza" type="_WzLV8ONwEeeHQtdOPsB5Og" association="_WzPAVeNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPAWeNwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzPAVeNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPAWuNwEeeHQtdOPsB5Og" name="Wykonanie resetu"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPAW-NwEeeHQtdOPsB5Og" name="Zalogowanie czytelnika">
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzPAXONwEeeHQtdOPsB5Og" name="ExtensionPoint1"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzPAXeNwEeeHQtdOPsB5Og" name="ExtensionPoint2"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPnYONwEeeHQtdOPsB5Og" name="Usunięcie wydawnictwa"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzPnYeNwEeeHQtdOPsB5Og" name="Zalogowanie administratora">
-    <extend xmi:type="uml:Extend" xmi:id="_WzPnYuNwEeeHQtdOPsB5Og" extendedCase="_WzPAW-NwEeeHQtdOPsB5Og" extensionLocation="_WzPAXONwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzPnY-NwEeeHQtdOPsB5Og" memberEnd="_WzPnZuNwEeeHQtdOPsB5Og _WzPnZ-NwEeeHQtdOPsB5Og">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPnZONwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
@@ -159,13 +66,6 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzPna-NwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzPnaONwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzPnbONwEeeHQtdOPsB5Og" name="wykonanie resetu" type="_WzPAWuNwEeeHQtdOPsB5Og" association="_WzPnaONwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzPnbeNwEeeHQtdOPsB5Og" memberEnd="_WzPncONwEeeHQtdOPsB5Og _WzPnceNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzPnbuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzPnb-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPncONwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzPnbeNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzPnceNwEeeHQtdOPsB5Og" name="usunięcie użytkownika" type="_WzQ1huNwEeeHQtdOPsB5Og" association="_WzPnbeNwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzQOcONwEeeHQtdOPsB5Og" name="Wyświetlenie dostępnych prenumerat"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzQOceNwEeeHQtdOPsB5Og" memberEnd="_WzQOdONwEeeHQtdOPsB5Og _WzQOdeNwEeeHQtdOPsB5Og">
@@ -190,7 +90,6 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1hONwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzQ1gONwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_WzQ1heNwEeeHQtdOPsB5Og" name="Czytelnik Niezalogowany"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzQ1huNwEeeHQtdOPsB5Og" name="Usunięcie użytkownika"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzQ1h-NwEeeHQtdOPsB5Og" memberEnd="_WzQ1iuNwEeeHQtdOPsB5Og _WzQ1i-NwEeeHQtdOPsB5Og">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQ1iONwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQ1ieNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
@@ -198,37 +97,11 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1iuNwEeeHQtdOPsB5Og" name="zaloguj czytelnika" type="_WzPAW-NwEeeHQtdOPsB5Og" association="_WzQ1h-NwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1i-NwEeeHQtdOPsB5Og" name="czytelnik niezalogowany" type="_WzQ1heNwEeeHQtdOPsB5Og" association="_WzQ1h-NwEeeHQtdOPsB5Og"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzQ1jONwEeeHQtdOPsB5Og" memberEnd="_WzQ1j-NwEeeHQtdOPsB5Og _WzQ1kONwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzQ1jeNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzQ1juNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1j-NwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzQ1jONwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzQ1kONwEeeHQtdOPsB5Og" name="dodanie prenumeraty" type="_WzNyNuNwEeeHQtdOPsB5Og" association="_WzQ1jONwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzRckONwEeeHQtdOPsB5Og" name="Dodanie wydawnictwa"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzRckeNwEeeHQtdOPsB5Og" name="Zalogowanie moderatora">
-    <extend xmi:type="uml:Extend" xmi:id="_WzRckuNwEeeHQtdOPsB5Og" extendedCase="_WzPAW-NwEeeHQtdOPsB5Og" extensionLocation="_WzPAXeNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_WzRck-NwEeeHQtdOPsB5Og" name="Moderator">
     <generalization xmi:type="uml:Generalization" xmi:id="_WzRclONwEeeHQtdOPsB5Og" general="_WzNyN-NwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzSDoONwEeeHQtdOPsB5Og" name="Przeszukanie artykułów darmowych">
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WzSDoeNwEeeHQtdOPsB5Og" name="ExtensionPoint1"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzSDouNwEeeHQtdOPsB5Og" memberEnd="_WzSDpeNwEeeHQtdOPsB5Og _WzSDpuNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzSDo-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzSDpONwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSDpeNwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzSDouNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSDpuNwEeeHQtdOPsB5Og" name="usunięcie moderatora" type="_WzSqsONwEeeHQtdOPsB5Og" association="_WzSDouNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzSqsONwEeeHQtdOPsB5Og" name="Usunięcie moderatora"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzSqseNwEeeHQtdOPsB5Og" memberEnd="_WzSqtONwEeeHQtdOPsB5Og _WzSqteNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzSqsuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzSqs-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSqtONwEeeHQtdOPsB5Og" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_WzSqseNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzSqteNwEeeHQtdOPsB5Og" name="usunięcie wydawnictwa" type="_WzPnYONwEeeHQtdOPsB5Og" association="_WzSqseNwEeeHQtdOPsB5Og"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzSqtuNwEeeHQtdOPsB5Og" name="Usunięcie artykułu darmowego"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzSqt-NwEeeHQtdOPsB5Og" memberEnd="_WzSquuNwEeeHQtdOPsB5Og _WzSqu-NwEeeHQtdOPsB5Og">
@@ -238,24 +111,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzSquuNwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzSqt-NwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzSqu-NwEeeHQtdOPsB5Og" name="usunięcie artykułu darmowego" type="_WzSqtuNwEeeHQtdOPsB5Og" association="_WzSqt-NwEeeHQtdOPsB5Og"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzTRwONwEeeHQtdOPsB5Og" memberEnd="_WzTRw-NwEeeHQtdOPsB5Og _WzTRxONwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzTRweNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzTRwuNwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRw-NwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzTRwONwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRxONwEeeHQtdOPsB5Og" name="usunięcie użytkownika" type="_WzQ1huNwEeeHQtdOPsB5Og" association="_WzTRwONwEeeHQtdOPsB5Og"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzTRxeNwEeeHQtdOPsB5Og" name="Umieszczenie artykułu darmowego"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WzTRxuNwEeeHQtdOPsB5Og" memberEnd="_WzTRyeNwEeeHQtdOPsB5Og _WzTRyuNwEeeHQtdOPsB5Og">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzTRx-NwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzTRyONwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRyeNwEeeHQtdOPsB5Og" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_WzTRxuNwEeeHQtdOPsB5Og"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WzTRyuNwEeeHQtdOPsB5Og" name="usunięcie wydawnictwa" type="_WzPnYONwEeeHQtdOPsB5Og" association="_WzTRxuNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzTRy-NwEeeHQtdOPsB5Og" name="Wyświetlenie reklamy">
-    <include xmi:type="uml:Include" xmi:id="_WzTRzONwEeeHQtdOPsB5Og" addition="_WzT40uNwEeeHQtdOPsB5Og"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_WzTRzeNwEeeHQtdOPsB5Og" memberEnd="_WzTR0ONwEeeHQtdOPsB5Og _WzTR0eNwEeeHQtdOPsB5Og">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzTRzuNwEeeHQtdOPsB5Og" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzTRz-NwEeeHQtdOPsB5Og" key="nature" value="UML_Nature"/>
@@ -263,27 +119,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzTR0ONwEeeHQtdOPsB5Og" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_WzTRzeNwEeeHQtdOPsB5Og"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_WzTR0eNwEeeHQtdOPsB5Og" name="wykupienie prenumeraty" type="_WzNLIONwEeeHQtdOPsB5Og" association="_WzTRzeNwEeeHQtdOPsB5Og"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40ONwEeeHQtdOPsB5Og" name="Założenie konta" classifierBehavior="_Lh1nQOSyEeeljpvKH0Y25g">
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Lh1nQOSyEeeljpvKH0Y25g" name="Interaction1">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_ONiYgOSyEeeljpvKH0Y25g" name="Czytelnik Niezalogowany" coveredBy="_eY6a8eSyEeeljpvKH0Y25g _Db1UAOSzEeeljpvKH0Y25g _VQWegOSzEeeljpvKH0Y25g"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_Z0Fk4OSyEeeljpvKH0Y25g" name="Autoryzator" coveredBy="_eY6a8uSyEeeljpvKH0Y25g _tb6gEOSyEeeljpvKH0Y25g _tb6gEeSyEeeljpvKH0Y25g _8GnZ8OSyEeeljpvKH0Y25g _8GooEOSyEeeljpvKH0Y25g _8GoBAOSyEeeljpvKH0Y25g _Db1UAeSzEeeljpvKH0Y25g _VQV3cOSzEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eY6a8eSyEeeljpvKH0Y25g" name="MessageSend" covered="_ONiYgOSyEeeljpvKH0Y25g" message="_eY6a8OSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eY6a8uSyEeeljpvKH0Y25g" name="MessageRecv" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_eY6a8OSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tb6gEOSyEeeljpvKH0Y25g" name="MessageSend0" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_tb5R8OSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tb6gEeSyEeeljpvKH0Y25g" name="MessageRecv0" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_tb5R8OSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8GnZ8OSyEeeljpvKH0Y25g" name="ActionExecSpecStart" covered="_Z0Fk4OSyEeeljpvKH0Y25g" execution="_8GoBAOSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_8GoBAOSyEeeljpvKH0Y25g" name="ActionExecSpec" covered="_Z0Fk4OSyEeeljpvKH0Y25g" finish="_8GooEOSyEeeljpvKH0Y25g" start="_8GnZ8OSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Db1UAOSzEeeljpvKH0Y25g" name="MessageSend1" covered="_ONiYgOSyEeeljpvKH0Y25g" message="_Db0F4OSzEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Db1UAeSzEeeljpvKH0Y25g" name="MessageRecv1" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_Db0F4OSzEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8GooEOSyEeeljpvKH0Y25g" name="ActionExecSpecFinish" covered="_Z0Fk4OSyEeeljpvKH0Y25g" execution="_8GoBAOSyEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VQWegOSzEeeljpvKH0Y25g" name="MessageRecv2" covered="_ONiYgOSyEeeljpvKH0Y25g" message="_VQVQYOSzEeeljpvKH0Y25g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VQV3cOSzEeeljpvKH0Y25g" name="MessageSend2" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_VQVQYOSzEeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_eY6a8OSyEeeljpvKH0Y25g" name="zalozKonto(login,haslo,email)" receiveEvent="_eY6a8uSyEeeljpvKH0Y25g" sendEvent="_eY6a8eSyEeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_tb5R8OSyEeeljpvKH0Y25g" name="wyslijEmailAutoryzacyjny(email)" receiveEvent="_tb6gEeSyEeeljpvKH0Y25g" sendEvent="_tb6gEOSyEeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_Db0F4OSzEeeljpvKH0Y25g" name="podajKod(kod)" messageSort="asynchCall" receiveEvent="_Db1UAeSzEeeljpvKH0Y25g" sendEvent="_Db1UAOSzEeeljpvKH0Y25g"/>
-      <message xmi:type="uml:Message" xmi:id="_VQVQYOSzEeeljpvKH0Y25g" name="[kodPoprawny=true &amp;&amp; t1 &lt; 10 minut]:kodPoprawny()" receiveEvent="_VQWegOSzEeeljpvKH0Y25g" sendEvent="_VQV3cOSzEeeljpvKH0Y25g"/>
-    </ownedBehavior>
-  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40ONwEeeHQtdOPsB5Og" name="Założenie konta"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40eNwEeeHQtdOPsB5Og" name="Wylogowanie czytelnika"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_WzT40uNwEeeHQtdOPsB5Og" name="Otwarcie artykułu darmowego">
     <extend xmi:type="uml:Extend" xmi:id="_WzT40-NwEeeHQtdOPsB5Og" extendedCase="_WzSDoONwEeeHQtdOPsB5Og" extensionLocation="_WzSDoeNwEeeHQtdOPsB5Og"/>
@@ -297,29 +133,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_QuHt4OQNEeehxfWeQNRiBQ" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_Qt6SgOQNEeehxfWeQNRiBQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_QuIU8OQNEeehxfWeQNRiBQ" name="usunięcie prenumeraty" type="_MJcBwOQNEeehxfWeQNRiBQ" association="_Qt6SgOQNEeehxfWeQNRiBQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_RL4A4OQNEeehxfWeQNRiBQ" memberEnd="_RL5PAuQNEeehxfWeQNRiBQ _RL52EOQNEeehxfWeQNRiBQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RL5PAOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RL5PAeQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RL5PAuQNEeehxfWeQNRiBQ" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_RL4A4OQNEeehxfWeQNRiBQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RL52EOQNEeehxfWeQNRiBQ" name="usunięcie prenumeraty" type="_MJcBwOQNEeehxfWeQNRiBQ" association="_RL4A4OQNEeehxfWeQNRiBQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_VMkPIOQNEeehxfWeQNRiBQ" name="Dodanie moderatora"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ZzzgAOQNEeehxfWeQNRiBQ" memberEnd="_Zz0uIeQNEeehxfWeQNRiBQ _Zz1VMOQNEeehxfWeQNRiBQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Zz0HEOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Zz0uIOQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Zz0uIeQNEeehxfWeQNRiBQ" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="_ZzzgAOQNEeehxfWeQNRiBQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Zz1VMOQNEeehxfWeQNRiBQ" name="dodanie moderatora" type="_VMkPIOQNEeehxfWeQNRiBQ" association="_ZzzgAOQNEeehxfWeQNRiBQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_agQWUOQNEeehxfWeQNRiBQ" memberEnd="_agSLgOQNEeehxfWeQNRiBQ _agSLgeQNEeehxfWeQNRiBQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_agQ9YOQNEeehxfWeQNRiBQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_agRkcOQNEeehxfWeQNRiBQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_agSLgOQNEeehxfWeQNRiBQ" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_agQWUOQNEeehxfWeQNRiBQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_agSLgeQNEeehxfWeQNRiBQ" name="dodanie moderatora" type="_VMkPIOQNEeehxfWeQNRiBQ" association="_agQWUOQNEeehxfWeQNRiBQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_lOdoYOSwEeeljpvKH0Y25g" name="Interaction2">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_lOdoYOSwEeeljpvKH0Y25g" name="Zalogowanie">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_nr7wYOSwEeeljpvKH0Y25g" name="Czytelnik niezalogowany" coveredBy="_xWct4eSwEeeljpvKH0Y25g _5HrOgOSwEeeljpvKH0Y25g _TjzvEOSxEeeljpvKH0Y25g _a05-IOSxEeeljpvKH0Y25g _lKmmoOSxEeeljpvKH0Y25g"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_vZtUYOSwEeeljpvKH0Y25g" name="Autoryzator" coveredBy="_xWdU8OSwEeeljpvKH0Y25g _5HqncOSwEeeljpvKH0Y25g _TjzIAOSxEeeljpvKH0Y25g _a05XEOSxEeeljpvKH0Y25g _lKl_kOSxEeeljpvKH0Y25g _umX9gOSxEeeljpvKH0Y25g _umYkkOSxEeeljpvKH0Y25g"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xWct4eSwEeeljpvKH0Y25g" name="MessageSend" covered="_nr7wYOSwEeeljpvKH0Y25g" message="_xWct4OSwEeeljpvKH0Y25g"/>
@@ -348,9 +162,20 @@
     <expr xmi:type="uml:LiteralInteger" xmi:id="_Hos9EeSzEeeljpvKH0Y25g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:TimeObservation" xmi:id="_Llb4YOSzEeeljpvKH0Y25g" name="t1"/>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_nEWZsOS1EeeljpvKH0Y25g" name="Interaction3">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_nEWZsOS1EeeljpvKH0Y25g" name="">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Lkx8cOvXEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Lw9-UOvXEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Qv6kkOvXEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VOYT8OvXEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VZ5ncOvXEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rJXvIOvYEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yEbnUOvZEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yLJ6YOvZEeeii8Hr_3Gp7A" name="" type="_pfhmMOS2EeeljpvKH0Y25g"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_pXA_4OS1EeeljpvKH0Y25g" name="Administrator" coveredBy="_Qr6ioOS2EeeljpvKH0Y25g _euZl8OS2EeeljpvKH0Y25g"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_5NQf0OS1EeeljpvKH0Y25g" name="System" coveredBy="_Qr6ioeS2EeeljpvKH0Y25g _W2a9EOS2EeeljpvKH0Y25g _W2bkIOS2EeeljpvKH0Y25g _crbooOS2EeeljpvKH0Y25g _euZl8eS2EeeljpvKH0Y25g _pJlLYOS2EeeljpvKH0Y25g _pJlLYeS2EeeljpvKH0Y25g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_LkxVYOvXEeeii8Hr_3Gp7A" name="" represents="_rJXvIOvYEeeii8Hr_3Gp7A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Qv59gOvXEeeii8Hr_3Gp7A" name="" represents="_yLJ6YOvZEeeii8Hr_3Gp7A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_yEaZMOvZEeeii8Hr_3Gp7A" name="" represents="_yEbnUOvZEeeii8Hr_3Gp7A"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qr6ioOS2EeeljpvKH0Y25g" name="MessageSend" covered="_pXA_4OS1EeeljpvKH0Y25g" message="_Qr57kOS2EeeljpvKH0Y25g"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qr6ioeS2EeeljpvKH0Y25g" name="MessageRecv" covered="_5NQf0OS1EeeljpvKH0Y25g" message="_Qr57kOS2EeeljpvKH0Y25g"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pJlLYOS2EeeljpvKH0Y25g" name="MessageSend4" covered="_5NQf0OS1EeeljpvKH0Y25g" message="_pJkkUOS2EeeljpvKH0Y25g"/>
@@ -367,7 +192,7 @@
     <message xmi:type="uml:Message" xmi:id="_euYX0OS2EeeljpvKH0Y25g" name="wznow()" receiveEvent="_euZl8eS2EeeljpvKH0Y25g" sendEvent="_euZl8OS2EeeljpvKH0Y25g"/>
     <message xmi:type="uml:Message" xmi:id="_pJkkUOS2EeeljpvKH0Y25g" name="wyczyscNiezatwierdzoneDane()" receiveEvent="_pJlLYeS2EeeljpvKH0Y25g" sendEvent="_pJlLYOS2EeeljpvKH0Y25g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_pfhmMOS2EeeljpvKH0Y25g" name="Interaction3">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_pfhmMOS2EeeljpvKH0Y25g" name="WykonajReset">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_pfhmMeS2EeeljpvKH0Y25g" name="Administrator" coveredBy="_pfhmM-S2EeeljpvKH0Y25g _pfhmOuS2EeeljpvKH0Y25g _pfhmO-S2EeeljpvKH0Y25g _crcPsOS2EeeljpvKH0Y25g"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_pfhmMuS2EeeljpvKH0Y25g" name="System" coveredBy="_pfhmNOS2EeeljpvKH0Y25g _pfhmN-S2EeeljpvKH0Y25g _pfhmOOS2EeeljpvKH0Y25g _pfhmOeS2EeeljpvKH0Y25g _pfhmPOS2EeeljpvKH0Y25g _pfhmNeS2EeeljpvKH0Y25g _pfhmNuS2EeeljpvKH0Y25g _rEGXUeS2EeeljpvKH0Y25g _rEG-YOS2EeeljpvKH0Y25g"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pfhmNuS2EeeljpvKH0Y25g" name="MessageRecv4" covered="_pfhmMuS2EeeljpvKH0Y25g" message="_pfhmQeS2EeeljpvKH0Y25g"/>
@@ -389,4 +214,161 @@
     <message xmi:type="uml:Message" xmi:id="_pfhmQeS2EeeljpvKH0Y25g" name="Message" receiveEvent="_pfhmNuS2EeeljpvKH0Y25g" sendEvent="_pfhmNeS2EeeljpvKH0Y25g"/>
     <message xmi:type="uml:Message" xmi:id="_rEGXUOS2EeeljpvKH0Y25g" name="wstrzymajDzialanie()" receiveEvent="_rEG-YOS2EeeljpvKH0Y25g" sendEvent="_rEGXUeS2EeeljpvKH0Y25g"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Tb7f4OvMEeeii8Hr_3Gp7A" name="Reklamodawca"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WBU00OvMEeeii8Hr_3Gp7A" memberEnd="_WBnvwOvMEeeii8Hr_3Gp7A _WBoW0OvMEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WBmhoOvMEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WBmhoevMEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WBnvwOvMEeeii8Hr_3Gp7A" name="otwarcie artykułu darmowego" type="_WzT40uNwEeeHQtdOPsB5Og" association="_WBU00OvMEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WBoW0OvMEeeii8Hr_3Gp7A" name="reklamodawca" type="_Tb7f4OvMEeeii8Hr_3Gp7A" association="_WBU00OvMEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ffgmgOvMEeeii8Hr_3Gp7A" name="SystemPłatności"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oCyPIOvMEeeii8Hr_3Gp7A" name="Dodanie konta"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pPwYkOvMEeeii8Hr_3Gp7A" name="Usunięcie Konta"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q8CUMOvMEeeii8Hr_3Gp7A" memberEnd="_q8C7QuvMEeeii8Hr_3Gp7A _q8DiUOvMEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q8C7QOvMEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q8C7QevMEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q8C7QuvMEeeii8Hr_3Gp7A" name="dodanie konta" type="_oCyPIOvMEeeii8Hr_3Gp7A" association="_q8CUMOvMEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_q8DiUOvMEeeii8Hr_3Gp7A" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_q8CUMOvMEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rpvuwOvMEeeii8Hr_3Gp7A" memberEnd="_rpw84evMEeeii8Hr_3Gp7A _rpw84uvMEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rpwV0OvMEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rpw84OvMEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rpw84evMEeeii8Hr_3Gp7A" name="usunięcie konta" type="_pPwYkOvMEeeii8Hr_3Gp7A" association="_rpvuwOvMEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rpw84uvMEeeii8Hr_3Gp7A" name="administrator" type="_WzNyOeNwEeeHQtdOPsB5Og" association="_rpvuwOvMEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xCnQ4OvMEeeii8Hr_3Gp7A" memberEnd="_xCofAevMEeeii8Hr_3Gp7A _xCpGEOvMEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xCn38OvMEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xCofAOvMEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xCofAevMEeeii8Hr_3Gp7A" name="wykupienie prenumeraty" type="_WzNLIONwEeeHQtdOPsB5Og" association="_xCnQ4OvMEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xCpGEOvMEeeii8Hr_3Gp7A" name="systempłatności" type="_ffgmgOvMEeeii8Hr_3Gp7A" association="_xCnQ4OvMEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6furkOvMEeeii8Hr_3Gp7A" memberEnd="_6fvSouvMEeeii8Hr_3Gp7A _6fv5sOvMEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6fvSoOvMEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fvSoevMEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6fvSouvMEeeii8Hr_3Gp7A" name="dodanie prenumeraty" type="_WzNyNuNwEeeHQtdOPsB5Og" association="_6furkOvMEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6fv5sOvMEeeii8Hr_3Gp7A" name="wydawnictwo" type="_WzNyMONwEeeHQtdOPsB5Og" association="_6furkOvMEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SBshEOvNEeeii8Hr_3Gp7A" memberEnd="_SBtIIevNEeeii8Hr_3Gp7A _SBtIIuvNEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SBshEevNEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SBtIIOvNEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SBtIIevNEeeii8Hr_3Gp7A" name="czytelnik zalogowany" type="_WzNyN-NwEeeHQtdOPsB5Og" association="_SBshEOvNEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SBtIIuvNEeeii8Hr_3Gp7A" name="otwarcie artykułu darmowego" type="_WzT40uNwEeeHQtdOPsB5Og" association="_SBshEOvNEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__-_UIOvNEeeii8Hr_3Gp7A" memberEnd="__-_7MuvNEeeii8Hr_3Gp7A __-_7M-vNEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__-_7MOvNEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__-_7MevNEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__-_7MuvNEeeii8Hr_3Gp7A" name="usunięcie prenumeraty" type="_MJcBwOQNEeehxfWeQNRiBQ" association="__-_UIOvNEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__-_7M-vNEeeii8Hr_3Gp7A" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="__-_UIOvNEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_V7AGMOvTEeeii8Hr_3Gp7A" name="Konto"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jhkCgOvTEeeii8Hr_3Gp7A" name="Wydawnictwo">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rHHeoOvTEeeii8Hr_3Gp7A" client="_jhkCgOvTEeeii8Hr_3Gp7A" supplier="_V7AGMOvTEeeii8Hr_3Gp7A" contract="_V7AGMOvTEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kjsN4OvTEeeii8Hr_3Gp7A" name="Czytelnik">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_thKfMOvTEeeii8Hr_3Gp7A" client="_kjsN4OvTEeeii8Hr_3Gp7A" supplier="_V7AGMOvTEeeii8Hr_3Gp7A" contract="_V7AGMOvTEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_loZzMOvTEeeii8Hr_3Gp7A" name="Moderator">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_s_nRUOvTEeeii8Hr_3Gp7A" client="_loZzMOvTEeeii8Hr_3Gp7A" supplier="_V7AGMOvTEeeii8Hr_3Gp7A" contract="_V7AGMOvTEeeii8Hr_3Gp7A"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NTmgoOvVEeeii8Hr_3Gp7A" name="DodajArtykul"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OuHW0OvVEeeii8Hr_3Gp7A" name="UsunArtykul"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_P0fJAOvVEeeii8Hr_3Gp7A" name="DodajPrenumerate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QyqogOvVEeeii8Hr_3Gp7A" name="UsunPrenumerate"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mtfzAOvTEeeii8Hr_3Gp7A" name="Administrator">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_sMhAcOvTEeeii8Hr_3Gp7A" client="_mtfzAOvTEeeii8Hr_3Gp7A" supplier="_V7AGMOvTEeeii8Hr_3Gp7A" contract="_V7AGMOvTEeeii8Hr_3Gp7A"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FtPMMOvVEeeii8Hr_3Gp7A" name="UtwórzKonto"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_T0oIMOvWEeeii8Hr_3Gp7A" name="Poczta Elektroniczna"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VxLUcOvWEeeii8Hr_3Gp7A" memberEnd="_VxL7guvWEeeii8Hr_3Gp7A _VxL7g-vWEeeii8Hr_3Gp7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VxL7gOvWEeeii8Hr_3Gp7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VxL7gevWEeeii8Hr_3Gp7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VxL7guvWEeeii8Hr_3Gp7A" name="założenie konta" type="_WzT40ONwEeeHQtdOPsB5Og" association="_VxLUcOvWEeeii8Hr_3Gp7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VxL7g-vWEeeii8Hr_3Gp7A" name="poczta elektroniczna" type="_T0oIMOvWEeeii8Hr_3Gp7A" association="_VxLUcOvWEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_Y2vsUOvYEeeii8Hr_3Gp7A" name="WykupieniePrenumeraty">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y2vsUevYEeeii8Hr_3Gp7A" name="Czytelnik zalogowany" coveredBy="_Y2vsVevYEeeii8Hr_3Gp7A _Y2vsWOvYEeeii8Hr_3Gp7A _Y2vsWevYEeeii8Hr_3Gp7A _Y2vsXOvYEeeii8Hr_3Gp7A _Y2vsXevYEeeii8Hr_3Gp7A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y2vsUuvYEeeii8Hr_3Gp7A" name="Wydawnictwo" coveredBy="_Y2vsY-vYEeeii8Hr_3Gp7A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y2vsU-vYEeeii8Hr_3Gp7A" name="Baza prenumerat" coveredBy="_Y2vsVuvYEeeii8Hr_3Gp7A _Y2vsV-vYEeeii8Hr_3Gp7A _Y2vsZevYEeeii8Hr_3Gp7A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y2vsVOvYEeeii8Hr_3Gp7A" name="Realizator płatności" coveredBy="_Y2vsWuvYEeeii8Hr_3Gp7A _Y2vsW-vYEeeii8Hr_3Gp7A _Y2vsXuvYEeeii8Hr_3Gp7A _Y2vsX-vYEeeii8Hr_3Gp7A _Y2vsYevYEeeii8Hr_3Gp7A _Y2vsYOvYEeeii8Hr_3Gp7A _Y2vsYuvYEeeii8Hr_3Gp7A _Y2vsZOvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsVevYEeeii8Hr_3Gp7A" name="MessageSend" covered="_Y2vsUevYEeeii8Hr_3Gp7A" message="_Y2vsZuvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsVuvYEeeii8Hr_3Gp7A" name="MessageRecv" covered="_Y2vsU-vYEeeii8Hr_3Gp7A" message="_Y2vsZuvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsV-vYEeeii8Hr_3Gp7A" name="MessageSend0" covered="_Y2vsU-vYEeeii8Hr_3Gp7A" message="_Y2vsZ-vYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsWOvYEeeii8Hr_3Gp7A" name="MessageRecv0" covered="_Y2vsUevYEeeii8Hr_3Gp7A" message="_Y2vsZ-vYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsWevYEeeii8Hr_3Gp7A" name="MessageSend1" covered="_Y2vsUevYEeeii8Hr_3Gp7A" message="_Y2vsaOvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsWuvYEeeii8Hr_3Gp7A" name="MessageRecv1" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" message="_Y2vsaOvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsW-vYEeeii8Hr_3Gp7A" name="MessageSend2" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" message="_Y2vsaevYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsXOvYEeeii8Hr_3Gp7A" name="MessageRecv2" covered="_Y2vsUevYEeeii8Hr_3Gp7A" message="_Y2vsaevYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsXevYEeeii8Hr_3Gp7A" name="MessageSend3" covered="_Y2vsUevYEeeii8Hr_3Gp7A" message="_Y2vsauvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsXuvYEeeii8Hr_3Gp7A" name="MessageRecv3" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" message="_Y2vsauvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Y2vsX-vYEeeii8Hr_3Gp7A" name="ActionExecSpecStart" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" execution="_Y2vsYOvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Y2vsYOvYEeeii8Hr_3Gp7A" name="ActionExecSpec" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" finish="_Y2vsYevYEeeii8Hr_3Gp7A" start="_Y2vsX-vYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Y2vsYevYEeeii8Hr_3Gp7A" name="ActionExecSpecFinish" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" execution="_Y2vsYOvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsYuvYEeeii8Hr_3Gp7A" name="MessageSend4" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" message="_Y2vsa-vYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsY-vYEeeii8Hr_3Gp7A" name="MessageRecv4" covered="_Y2vsUuvYEeeii8Hr_3Gp7A" message="_Y2vsa-vYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsZOvYEeeii8Hr_3Gp7A" name="MessageSend5" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" message="_Y2vsbOvYEeeii8Hr_3Gp7A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsZevYEeeii8Hr_3Gp7A" name="MessageRecv5" covered="_Y2vsU-vYEeeii8Hr_3Gp7A" message="_Y2vsbOvYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsZuvYEeeii8Hr_3Gp7A" name="wybierzPrenumerate(id)" receiveEvent="_Y2vsVuvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsVevYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsZ-vYEeeii8Hr_3Gp7A" name="zwróćStronęZPrenumerat()" receiveEvent="_Y2vsWOvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsV-vYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsaOvYEeeii8Hr_3Gp7A" name="złóżZamówienie(okres,typ,ilość)" receiveEvent="_Y2vsWuvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsWevYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsaevYEeeii8Hr_3Gp7A" name="zwróćStronęZPodsumowaniem()" receiveEvent="_Y2vsXOvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsW-vYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsauvYEeeii8Hr_3Gp7A" name="zatwierdz(id_klienta)" receiveEvent="_Y2vsXuvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsXevYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsa-vYEeeii8Hr_3Gp7A" name="wyslijPotwierdzenieWplaty()" receiveEvent="_Y2vsY-vYEeeii8Hr_3Gp7A" sendEvent="_Y2vsYuvYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsbOvYEeeii8Hr_3Gp7A" name="zaktualizujStatystyki(id, ilosc)" messageSort="asynchCall" receiveEvent="_Y2vsZevYEeeii8Hr_3Gp7A" sendEvent="_Y2vsZOvYEeeii8Hr_3Gp7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_tcddMOSzEeeljpvKH0Y25g" name="DodaniePrenumeraty">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_xK1MYOSzEeeljpvKH0Y25g" name="Wydawnictwo" coveredBy="_Eq7u8OS0EeeljpvKH0Y25g _MwMwcOS1EeeljpvKH0Y25g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0CU98OSzEeeljpvKH0Y25g" name="Baza prenumerat" coveredBy="_Eq7u8eS0EeeljpvKH0Y25g _pl_FcOS0EeeljpvKH0Y25g _C6Fm8OS1EeeljpvKH0Y25g _HSiN4OS1EeeljpvKH0Y25g _HSiN4eS1EeeljpvKH0Y25g _MwMJYOS1EeeljpvKH0Y25g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_19XuUOSzEeeljpvKH0Y25g" name="Moderator" coveredBy="_pl_FceS0EeeljpvKH0Y25g _C6E_4OS1EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Eq7u8OS0EeeljpvKH0Y25g" name="MessageSend" covered="_xK1MYOSzEeeljpvKH0Y25g" message="_Eq7H4OS0EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Eq7u8eS0EeeljpvKH0Y25g" name="MessageRecv" covered="_0CU98OSzEeeljpvKH0Y25g" message="_Eq7H4OS0EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pl_FcOS0EeeljpvKH0Y25g" name="MessageSend0" covered="_0CU98OSzEeeljpvKH0Y25g" message="_pl-eYOS0EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pl_FceS0EeeljpvKH0Y25g" name="MessageRecv0" covered="_19XuUOSzEeeljpvKH0Y25g" message="_pl-eYOS0EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_C6E_4OS1EeeljpvKH0Y25g" name="MessageSend1" covered="_19XuUOSzEeeljpvKH0Y25g" message="_C6EY0OS1EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_C6Fm8OS1EeeljpvKH0Y25g" name="MessageRecv1" covered="_0CU98OSzEeeljpvKH0Y25g" message="_C6EY0OS1EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HSiN4OS1EeeljpvKH0Y25g" name="MessageSend2" covered="_0CU98OSzEeeljpvKH0Y25g" message="_HShm0OS1EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HSiN4eS1EeeljpvKH0Y25g" name="MessageRecv2" covered="_0CU98OSzEeeljpvKH0Y25g" message="_HShm0OS1EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MwMJYOS1EeeljpvKH0Y25g" name="MessageSend3" covered="_0CU98OSzEeeljpvKH0Y25g" message="_MwLiUOS1EeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MwMwcOS1EeeljpvKH0Y25g" name="MessageRecv3" covered="_xK1MYOSzEeeljpvKH0Y25g" message="_MwLiUOS1EeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_Eq7H4OS0EeeljpvKH0Y25g" name="dodajPrenumerate(id_wydawnictwa,tytul,opis,cena,typ)" receiveEvent="_Eq7u8eS0EeeljpvKH0Y25g" sendEvent="_Eq7u8OS0EeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_pl-eYOS0EeeljpvKH0Y25g" name="poprosOZatwierdzenie(id_prenumeraty)" receiveEvent="_pl_FceS0EeeljpvKH0Y25g" sendEvent="_pl_FcOS0EeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_C6EY0OS1EeeljpvKH0Y25g" name="potwierdz(id_prenumeraty)" receiveEvent="_C6Fm8OS1EeeljpvKH0Y25g" sendEvent="_C6E_4OS1EeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_HShm0OS1EeeljpvKH0Y25g" name="zatwierdzWBazie(id_prenumeraty)" receiveEvent="_HSiN4eS1EeeljpvKH0Y25g" sendEvent="_HSiN4OS1EeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_MwLiUOS1EeeljpvKH0Y25g" name="wyslijPotwierdzenieDodania(tytul)" receiveEvent="_MwMwcOS1EeeljpvKH0Y25g" sendEvent="_MwMJYOS1EeeljpvKH0Y25g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_Lh1nQOSyEeeljpvKH0Y25g" name="ZałożenieKonta">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_ONiYgOSyEeeljpvKH0Y25g" name="Czytelnik Niezalogowany" coveredBy="_eY6a8eSyEeeljpvKH0Y25g _Db1UAOSzEeeljpvKH0Y25g _VQWegOSzEeeljpvKH0Y25g"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Z0Fk4OSyEeeljpvKH0Y25g" name="Autoryzator" coveredBy="_eY6a8uSyEeeljpvKH0Y25g _tb6gEOSyEeeljpvKH0Y25g _tb6gEeSyEeeljpvKH0Y25g _8GnZ8OSyEeeljpvKH0Y25g _8GooEOSyEeeljpvKH0Y25g _8GoBAOSyEeeljpvKH0Y25g _Db1UAeSzEeeljpvKH0Y25g _VQV3cOSzEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eY6a8eSyEeeljpvKH0Y25g" name="MessageSend" covered="_ONiYgOSyEeeljpvKH0Y25g" message="_eY6a8OSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eY6a8uSyEeeljpvKH0Y25g" name="MessageRecv" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_eY6a8OSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tb6gEOSyEeeljpvKH0Y25g" name="MessageSend0" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_tb5R8OSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tb6gEeSyEeeljpvKH0Y25g" name="MessageRecv0" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_tb5R8OSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8GnZ8OSyEeeljpvKH0Y25g" name="ActionExecSpecStart" covered="_Z0Fk4OSyEeeljpvKH0Y25g" execution="_8GoBAOSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_8GoBAOSyEeeljpvKH0Y25g" name="ActionExecSpec" covered="_Z0Fk4OSyEeeljpvKH0Y25g" finish="_8GooEOSyEeeljpvKH0Y25g" start="_8GnZ8OSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Db1UAOSzEeeljpvKH0Y25g" name="MessageSend1" covered="_ONiYgOSyEeeljpvKH0Y25g" message="_Db0F4OSzEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Db1UAeSzEeeljpvKH0Y25g" name="MessageRecv1" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_Db0F4OSzEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8GooEOSyEeeljpvKH0Y25g" name="ActionExecSpecFinish" covered="_Z0Fk4OSyEeeljpvKH0Y25g" execution="_8GoBAOSyEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VQWegOSzEeeljpvKH0Y25g" name="MessageRecv2" covered="_ONiYgOSyEeeljpvKH0Y25g" message="_VQVQYOSzEeeljpvKH0Y25g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VQV3cOSzEeeljpvKH0Y25g" name="MessageSend2" covered="_Z0Fk4OSyEeeljpvKH0Y25g" message="_VQVQYOSzEeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_eY6a8OSyEeeljpvKH0Y25g" name="zalozKonto(login,haslo,email)" receiveEvent="_eY6a8uSyEeeljpvKH0Y25g" sendEvent="_eY6a8eSyEeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_tb5R8OSyEeeljpvKH0Y25g" name="wyslijEmailAutoryzacyjny(email)" receiveEvent="_tb6gEeSyEeeljpvKH0Y25g" sendEvent="_tb6gEOSyEeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_Db0F4OSzEeeljpvKH0Y25g" name="podajKod(kod)" messageSort="asynchCall" receiveEvent="_Db1UAeSzEeeljpvKH0Y25g" sendEvent="_Db1UAOSzEeeljpvKH0Y25g"/>
+    <message xmi:type="uml:Message" xmi:id="_VQVQYOSzEeeljpvKH0Y25g" name="[kodPoprawny=true &amp;&amp; t1 &lt; 10 minut]:kodPoprawny()" receiveEvent="_VQWegOSzEeeljpvKH0Y25g" sendEvent="_VQV3cOSzEeeljpvKH0Y25g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_e-gp4OvaEeeii8Hr_3Gp7A" name="WyświetleniePrenumerat"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_kMiN8OvaEeeii8Hr_3Gp7A" name="PrzeszukanieArtykułów"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_sOZyoOvaEeeii8Hr_3Gp7A" name="Wylogowanie"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_xmJTYOvaEeeii8Hr_3Gp7A" name="OtwarcieArtykułu"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_5htbwOvaEeeii8Hr_3Gp7A" name="UsunięciePrenumeraty"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="__fBHsOvaEeeii8Hr_3Gp7A" name="UmieszczenieArtykułu"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_E5OGkOvbEeeii8Hr_3Gp7A" name="UsunięcieArtykułu"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_K9xC8OvbEeeii8Hr_3Gp7A" name="DodanieKonta"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_PsSAgOvbEeeii8Hr_3Gp7A" name="UsunięcieKonta"/>
 </uml:Model>
