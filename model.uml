@@ -335,7 +335,7 @@
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsW-vYEeeii8Hr_3Gp7A" name="MessageSend2" covered="_Y2vsVOvYEeeii8Hr_3Gp7A" message="_Y2vsaevYEeeii8Hr_3Gp7A"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y2vsY-vYEeeii8Hr_3Gp7A" name="MessageRecv4" covered="_Y2vsUuvYEeeii8Hr_3Gp7A" message="_Y2vsa-vYEeeii8Hr_3Gp7A"/>
     <message xmi:type="uml:Message" xmi:id="_Y2vsZuvYEeeii8Hr_3Gp7A" name="wybierzPrenumerate(id)" receiveEvent="_Y2vsVuvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsVevYEeeii8Hr_3Gp7A"/>
-    <message xmi:type="uml:Message" xmi:id="_Y2vsZ-vYEeeii8Hr_3Gp7A" name="zwróćStronęZPrenumerat()" receiveEvent="_Y2vsWOvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsV-vYEeeii8Hr_3Gp7A"/>
+    <message xmi:type="uml:Message" xmi:id="_Y2vsZ-vYEeeii8Hr_3Gp7A" name="zwróćStronęZPrenumerata()" receiveEvent="_Y2vsWOvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsV-vYEeeii8Hr_3Gp7A"/>
     <message xmi:type="uml:Message" xmi:id="_Y2vsaOvYEeeii8Hr_3Gp7A" name="złóżZamówienie(okres,typ,ilość)" receiveEvent="_Y2vsWuvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsWevYEeeii8Hr_3Gp7A"/>
     <message xmi:type="uml:Message" xmi:id="_Y2vsaevYEeeii8Hr_3Gp7A" name="zwróćStronęZPodsumowaniem()" receiveEvent="_Y2vsXOvYEeeii8Hr_3Gp7A" sendEvent="_Y2vsW-vYEeeii8Hr_3Gp7A"/>
     <message xmi:type="uml:Message" xmi:id="_Y2vsa-vYEeeii8Hr_3Gp7A" name="wyslijPotwierdzenieWplaty()" receiveEvent="_Y2vsY-vYEeeii8Hr_3Gp7A" sendEvent="_Y2vsYuvYEeeii8Hr_3Gp7A"/>
@@ -858,4 +858,97 @@
   <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_sxh_UPOlEeeMQcwbqLW_-A" name="InstanceSpecification19">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tCyHYPOlEeeMQcwbqLW_-A" source="InstanceEnd" references="_9ihswPOkEeeMQcwbqLW_-A _-4bvwPOkEeeMQcwbqLW_-A"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ERZdEPZZEee8L_xzQWUbWg" name="StateMachine2">
+    <region xmi:type="uml:Region" xmi:id="_GBgv0PZZEee8L_xzQWUbWg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_amdlIPZaEee8L_xzQWUbWg" name="Poproś o dodanie artykułu" source="_HSsq4PZZEee8L_xzQWUbWg" target="_Gl3koPZaEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fPMDwPZaEee8L_xzQWUbWg" name="Odrzuć artykuł" source="_Gl3koPZaEee8L_xzQWUbWg" target="_Qxz0MPZaEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_bIfesPZbEee8L_xzQWUbWg" name="Zatwierdź artykuł" kind="local" source="_Gl3koPZaEee8L_xzQWUbWg" target="_G1Az4PZaEee8L_xzQWUbWg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_HSsq4PZZEee8L_xzQWUbWg" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Gl3koPZaEee8L_xzQWUbWg" name="Dodawany"/>
+      <subvertex xmi:type="uml:State" xmi:id="_G1Az4PZaEee8L_xzQWUbWg" name="Dodany"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Qxz0MPZaEee8L_xzQWUbWg" name="Odrzucony"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_1Lv6UPZdEee8L_xzQWUbWg" name="StateMachine3">
+    <region xmi:type="uml:Region" xmi:id="_2JAz0PZdEee8L_xzQWUbWg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_jVOSwPZfEee8L_xzQWUbWg" name="Anulowane" source="_ZXyZQPZfEee8L_xzQWUbWg" target="_h5kNEPZfEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4hsQgPZfEee8L_xzQWUbWg" name="Wyświetl prenumeraty" source="_EAJiwPZeEee8L_xzQWUbWg" target="__LwxQPZeEee8L_xzQWUbWg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_EAJiwPZeEee8L_xzQWUbWg" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ZXyZQPZfEee8L_xzQWUbWg" name="State1">
+        <region xmi:type="uml:Region" xmi:id="_Zs4fgfZfEee8L_xzQWUbWg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_CQvvwPZgEee8L_xzQWUbWg" name="/wybierz inna prenumerate" source="__LwxQPZeEee8L_xzQWUbWg" target="__LwxQPZeEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_LpfAwPZgEee8L_xzQWUbWg" name="Potwierdź prenumerate" source="__LwxQPZeEee8L_xzQWUbWg" target="_FPt3wPZfEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_bn6MUPZgEee8L_xzQWUbWg" name="[określono okres, typ i ilość]/przejdź do podsumowania" source="_FPt3wPZfEee8L_xzQWUbWg" target="_Ky2JIPZfEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_lhQQAPZgEee8L_xzQWUbWg" name="/edytuj zamówienie" source="_Ky2JIPZfEee8L_xzQWUbWg" target="_FPt3wPZfEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yeQR8PZgEee8L_xzQWUbWg" name="/przejdź do płatności" source="_Ky2JIPZfEee8L_xzQWUbWg" target="_N_XvgPZfEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2_Y60PZgEee8L_xzQWUbWg" name="Płatność dokonana" source="_N_XvgPZfEee8L_xzQWUbWg" target="_lN1PoPZeEee8L_xzQWUbWg"/>
+          <subvertex xmi:type="uml:State" xmi:id="__LwxQPZeEee8L_xzQWUbWg" name="WybieraniePrenumeraty"/>
+          <subvertex xmi:type="uml:State" xmi:id="_FPt3wPZfEee8L_xzQWUbWg" name="ZamawianiePrenumeraty"/>
+          <subvertex xmi:type="uml:State" xmi:id="_Ky2JIPZfEee8L_xzQWUbWg" name="PodsumowanieZamowienia"/>
+          <subvertex xmi:type="uml:State" xmi:id="_N_XvgPZfEee8L_xzQWUbWg" name="Platnosc"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_h5kNEPZfEee8L_xzQWUbWg" name="Anulowane"/>
+      <subvertex xmi:type="uml:State" xmi:id="_lN1PoPZeEee8L_xzQWUbWg" name="PrenumerataWyslana"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_CU1zsPavEeeG1oWe2YdWpQ" name="Activity2" node="_HVXHQPavEeeG1oWe2YdWpQ _gAkAQPawEeeG1oWe2YdWpQ _rjWuAPawEeeG1oWe2YdWpQ _sDVOkPawEeeG1oWe2YdWpQ _tOPigPawEeeG1oWe2YdWpQ _klnDUPaxEeeG1oWe2YdWpQ _yg7HoPaxEeeG1oWe2YdWpQ _35qG4PaxEeeG1oWe2YdWpQ _6BpHEPaxEeeG1oWe2YdWpQ _9oVg8PaxEeeG1oWe2YdWpQ">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mjC10PawEeeG1oWe2YdWpQ" target="_gAkAQPawEeeG1oWe2YdWpQ" source="_HVXHQPavEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x0dfsPawEeeG1oWe2YdWpQ" target="_tOPigPawEeeG1oWe2YdWpQ" source="_gAkAQPawEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0VWIEPawEeeG1oWe2YdWpQ" name="[else]" target="_rjWuAPawEeeG1oWe2YdWpQ" source="_tOPigPawEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rroq0PaxEeeG1oWe2YdWpQ" target="_klnDUPaxEeeG1oWe2YdWpQ" source="_sDVOkPawEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1JDAcPaxEeeG1oWe2YdWpQ" name="[formularz wypełniony poprawnie]" target="_yg7HoPaxEeeG1oWe2YdWpQ" source="_tOPigPawEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2sV_MPaxEeeG1oWe2YdWpQ" target="_sDVOkPawEeeG1oWe2YdWpQ" source="_yg7HoPaxEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IVMsQPayEeeG1oWe2YdWpQ" name="[t &lt; 10 minut &amp;&amp; poprawny kod]" target="_35qG4PaxEeeG1oWe2YdWpQ" source="_klnDUPaxEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IxjREPayEeeG1oWe2YdWpQ" name="[t >= 10 minut]" target="_6BpHEPaxEeeG1oWe2YdWpQ" source="_klnDUPaxEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZRBUMPayEeeG1oWe2YdWpQ" target="_9oVg8PaxEeeG1oWe2YdWpQ" source="_35qG4PaxEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Zs9CQPayEeeG1oWe2YdWpQ" target="_9oVg8PaxEeeG1oWe2YdWpQ" source="_6BpHEPaxEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_c-qqoPayEeeG1oWe2YdWpQ" target="_gAkAQPawEeeG1oWe2YdWpQ" source="_rjWuAPawEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_HVXHQPavEeeG1oWe2YdWpQ" name="InitialNode1" outgoing="_mjC10PawEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_gAkAQPawEeeG1oWe2YdWpQ" name="Otrzymanie formularza rejestracyjnego" incoming="_mjC10PawEeeG1oWe2YdWpQ _c-qqoPayEeeG1oWe2YdWpQ" outgoing="_x0dfsPawEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rjWuAPawEeeG1oWe2YdWpQ" name="Zwróć stronę rejestracyjną wraz z informacją o błędzie" incoming="_0VWIEPawEeeG1oWe2YdWpQ" outgoing="_c-qqoPayEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sDVOkPawEeeG1oWe2YdWpQ" name="Wyślij email autoryzacyjny" incoming="_2sV_MPaxEeeG1oWe2YdWpQ" outgoing="_rroq0PaxEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_tOPigPawEeeG1oWe2YdWpQ" incoming="_x0dfsPawEeeG1oWe2YdWpQ" outgoing="_0VWIEPawEeeG1oWe2YdWpQ _1JDAcPaxEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_klnDUPaxEeeG1oWe2YdWpQ" incoming="_rroq0PaxEeeG1oWe2YdWpQ" outgoing="_IVMsQPayEeeG1oWe2YdWpQ _IxjREPayEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yg7HoPaxEeeG1oWe2YdWpQ" name="Dodaj użytkownika do bazy" incoming="_1JDAcPaxEeeG1oWe2YdWpQ" outgoing="_2sV_MPaxEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_35qG4PaxEeeG1oWe2YdWpQ" name="Aktywuj konto użytkownika" incoming="_IVMsQPayEeeG1oWe2YdWpQ" outgoing="_ZRBUMPayEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_6BpHEPaxEeeG1oWe2YdWpQ" name="Usuń użytkownika z bazy" incoming="_IxjREPayEeeG1oWe2YdWpQ" outgoing="_Zs9CQPayEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_9oVg8PaxEeeG1oWe2YdWpQ" incoming="_ZRBUMPayEeeG1oWe2YdWpQ _Zs9CQPayEeeG1oWe2YdWpQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ihBf8PayEeeG1oWe2YdWpQ" name="Activity3" node="_k5GxoPayEeeG1oWe2YdWpQ _OWIegPazEeeG1oWe2YdWpQ _TudOEPazEeeG1oWe2YdWpQ _qkOE4PazEeeG1oWe2YdWpQ _wmGu0PazEeeG1oWe2YdWpQ _GtpNsPa0EeeG1oWe2YdWpQ _QMP2IPa0EeeG1oWe2YdWpQ _hXmu4Pa0EeeG1oWe2YdWpQ _rzcboPa0EeeG1oWe2YdWpQ _swyNoPa0EeeG1oWe2YdWpQ _zKI8YPa0EeeG1oWe2YdWpQ _zwiOAPa0EeeG1oWe2YdWpQ _HKKVIPa1EeeG1oWe2YdWpQ">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z_NacPazEeeG1oWe2YdWpQ" target="_TudOEPazEeeG1oWe2YdWpQ" source="_OWIegPazEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yIuYIPazEeeG1oWe2YdWpQ" target="_wmGu0PazEeeG1oWe2YdWpQ" source="_TudOEPazEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yrOoQPazEeeG1oWe2YdWpQ" name="[podano okres,typ,ilość]" target="_qkOE4PazEeeG1oWe2YdWpQ" source="_wmGu0PazEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1cpnAPazEeeG1oWe2YdWpQ" name="[else]" target="_TudOEPazEeeG1oWe2YdWpQ" source="_wmGu0PazEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mhJbkPa0EeeG1oWe2YdWpQ" target="_GtpNsPa0EeeG1oWe2YdWpQ" source="_QMP2IPa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nFrE8Pa0EeeG1oWe2YdWpQ" target="_hXmu4Pa0EeeG1oWe2YdWpQ" source="_QMP2IPa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_u1eCMPa0EeeG1oWe2YdWpQ" target="_swyNoPa0EeeG1oWe2YdWpQ" source="_GtpNsPa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vU-osPa0EeeG1oWe2YdWpQ" target="_swyNoPa0EeeG1oWe2YdWpQ" source="_hXmu4Pa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wgL3kPa0EeeG1oWe2YdWpQ" target="_rzcboPa0EeeG1oWe2YdWpQ" source="_swyNoPa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5pygYPa0EeeG1oWe2YdWpQ" name="[płatność dokonana w czasie]" target="_zwiOAPa0EeeG1oWe2YdWpQ" source="_rzcboPa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6hT-QPa0EeeG1oWe2YdWpQ" name="[else]" target="_zKI8YPa0EeeG1oWe2YdWpQ" source="_rzcboPa0EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__miLoPa0EeeG1oWe2YdWpQ" target="_OWIegPazEeeG1oWe2YdWpQ" source="_k5GxoPayEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Tnta8Pa1EeeG1oWe2YdWpQ" target="_HKKVIPa1EeeG1oWe2YdWpQ" source="_qkOE4PazEeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UGNU0Pa1EeeG1oWe2YdWpQ" name="[potwierdzono zamówienie]" target="_QMP2IPa0EeeG1oWe2YdWpQ" source="_HKKVIPa1EeeG1oWe2YdWpQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UuxJoPa1EeeG1oWe2YdWpQ" name="[chęć dodania kolejnego zamówienia]" target="_TudOEPazEeeG1oWe2YdWpQ" source="_HKKVIPa1EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_k5GxoPayEeeG1oWe2YdWpQ" name="InitialNode1" outgoing="__miLoPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_OWIegPazEeeG1oWe2YdWpQ" name="Wyślij stronę z prenumeratami" incoming="__miLoPa0EeeG1oWe2YdWpQ" outgoing="_Z_NacPazEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TudOEPazEeeG1oWe2YdWpQ" name="Wyślij stronę z wybraną prenumeratą" incoming="_Z_NacPazEeeG1oWe2YdWpQ _1cpnAPazEeeG1oWe2YdWpQ _UuxJoPa1EeeG1oWe2YdWpQ" outgoing="_yIuYIPazEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qkOE4PazEeeG1oWe2YdWpQ" name="Podsumuj zamówienie" incoming="_yrOoQPazEeeG1oWe2YdWpQ" outgoing="_Tnta8Pa1EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_wmGu0PazEeeG1oWe2YdWpQ" incoming="_yIuYIPazEeeG1oWe2YdWpQ" outgoing="_yrOoQPazEeeG1oWe2YdWpQ _1cpnAPazEeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GtpNsPa0EeeG1oWe2YdWpQ" name="System płatności" incoming="_mhJbkPa0EeeG1oWe2YdWpQ" outgoing="_u1eCMPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_QMP2IPa0EeeG1oWe2YdWpQ" incoming="_UGNU0Pa1EeeG1oWe2YdWpQ" outgoing="_mhJbkPa0EeeG1oWe2YdWpQ _nFrE8Pa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hXmu4Pa0EeeG1oWe2YdWpQ" name="Dodaj zamówienie do bazy" incoming="_nFrE8Pa0EeeG1oWe2YdWpQ" outgoing="_vU-osPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_rzcboPa0EeeG1oWe2YdWpQ" incoming="_wgL3kPa0EeeG1oWe2YdWpQ" outgoing="_5pygYPa0EeeG1oWe2YdWpQ _6hT-QPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:JoinNode" xmi:id="_swyNoPa0EeeG1oWe2YdWpQ" incoming="_u1eCMPa0EeeG1oWe2YdWpQ _vU-osPa0EeeG1oWe2YdWpQ" outgoing="_wgL3kPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_zKI8YPa0EeeG1oWe2YdWpQ" name="Usuń zamówienie z bazy" incoming="_6hT-QPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_zwiOAPa0EeeG1oWe2YdWpQ" name="Wyślij potwierdzenie wpłaty do wydawnictwa" incoming="_5pygYPa0EeeG1oWe2YdWpQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_HKKVIPa1EeeG1oWe2YdWpQ" name="DecisionNode1" incoming="_Tnta8Pa1EeeG1oWe2YdWpQ" outgoing="_UGNU0Pa1EeeG1oWe2YdWpQ _UuxJoPa1EeeG1oWe2YdWpQ"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-AAsoPZaEee8L_xzQWUbWg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-ACh0PZaEee8L_xzQWUbWg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
