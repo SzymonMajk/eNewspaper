@@ -260,7 +260,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="__-_7MuvNEeeii8Hr_3Gp7A" name="usunięcie prenumeraty" type="_MJcBwOQNEeehxfWeQNRiBQ" association="__-_UIOvNEeeii8Hr_3Gp7A"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="__-_7M-vNEeeii8Hr_3Gp7A" name="moderator" type="_WzRck-NwEeeHQtdOPsB5Og" association="__-_UIOvNEeeii8Hr_3Gp7A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_V7AGMOvTEeeii8Hr_3Gp7A" name="Konto">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_V7AGMOvTEeeii8Hr_3Gp7A" name="Konto" visibility="public">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_aCZgUPOdEeeMQcwbqLW_-A" name="zalogowany">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_k-mvMPOdEeeMQcwbqLW_-A"/>
@@ -272,6 +272,7 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_f4Gy4O4gEeetOvaFY4FCdQ" name="blednyLogin"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_8B_ccO4lEeetOvaFY4FCdQ" name="zaloguj"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__s9SUO4lEeetOvaFY4FCdQ" name="wyloguj"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_j0of4ABVEeiMiOF6PevLew" name="zarejestruj"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_jhkCgOvTEeeii8Hr_3Gp7A" name="Wydawnictwo">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_U-0DM-4iEeetOvaFY4FCdQ" name="bazaprenumerat" type="_EiA5kO4iEeetOvaFY4FCdQ" association="_U-zcIO4iEeetOvaFY4FCdQ"/>
@@ -997,29 +998,34 @@
   <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_sxh_UPOlEeeMQcwbqLW_-A" name="InstanceSpecification19">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tCyHYPOlEeeMQcwbqLW_-A" source="InstanceEnd" references="_9ihswPOkEeeMQcwbqLW_-A _-4bvwPOkEeeMQcwbqLW_-A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ERZdEPZZEee8L_xzQWUbWg" name="StateMachine2">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ERZdEPZZEee8L_xzQWUbWg" name="DodawanieArtykulu">
     <region xmi:type="uml:Region" xmi:id="_GBgv0PZZEee8L_xzQWUbWg" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_amdlIPZaEee8L_xzQWUbWg" name="Poproś o dodanie artykułu" source="_HSsq4PZZEee8L_xzQWUbWg" target="_Gl3koPZaEee8L_xzQWUbWg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_fPMDwPZaEee8L_xzQWUbWg" name="Odrzuć artykuł" source="_Gl3koPZaEee8L_xzQWUbWg" target="_Qxz0MPZaEee8L_xzQWUbWg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_bIfesPZbEee8L_xzQWUbWg" name="Zatwierdź artykuł" kind="local" source="_Gl3koPZaEee8L_xzQWUbWg" target="_G1Az4PZaEee8L_xzQWUbWg"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_HSsq4PZZEee8L_xzQWUbWg" name="Initial1"/>
+      <transition xmi:type="uml:Transition" xmi:id="_amdlIPZaEee8L_xzQWUbWg" name="  Wydawnictwo:poprosoDodanieArtykulu()" source="_HSsq4PZZEee8L_xzQWUbWg" target="_Gl3koPZaEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fPMDwPZaEee8L_xzQWUbWg" name="Moderator:zatwierdzUsuniecieArtykulu()" source="_Rys4kABiEeiMiOF6PevLew" target="_Qxz0MPZaEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_bIfesPZbEee8L_xzQWUbWg" name="Moderator:zatwierdzArtykul()" kind="local" source="_Rys4kABiEeiMiOF6PevLew" target="_G1Az4PZaEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Uel3EABiEeiMiOF6PevLew" source="_Gl3koPZaEee8L_xzQWUbWg" target="_Rys4kABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_alFUMABiEeiMiOF6PevLew" source="_Qxz0MPZaEee8L_xzQWUbWg" target="_YRx00ABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_bYK-AABiEeiMiOF6PevLew" source="_G1Az4PZaEee8L_xzQWUbWg" target="_YRx00ABiEeiMiOF6PevLew"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_HSsq4PZZEee8L_xzQWUbWg" name="Initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_Gl3koPZaEee8L_xzQWUbWg" name="Dodawany"/>
       <subvertex xmi:type="uml:State" xmi:id="_G1Az4PZaEee8L_xzQWUbWg" name="Dodany"/>
       <subvertex xmi:type="uml:State" xmi:id="_Qxz0MPZaEee8L_xzQWUbWg" name="Odrzucony"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Rys4kABiEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_YRx00ABiEeiMiOF6PevLew" name="FinalState"/>
     </region>
   </packagedElement>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_1Lv6UPZdEee8L_xzQWUbWg" name="StateMachine3">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_1Lv6UPZdEee8L_xzQWUbWg" name="WykupieniePrenumeraty" submachineState="_iuGDsABXEeiMiOF6PevLew">
     <region xmi:type="uml:Region" xmi:id="_2JAz0PZdEee8L_xzQWUbWg" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_jVOSwPZfEee8L_xzQWUbWg" name="Anulowane" source="_ZXyZQPZfEee8L_xzQWUbWg" target="_h5kNEPZfEee8L_xzQWUbWg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_4hsQgPZfEee8L_xzQWUbWg" name="Wyświetl prenumeraty" source="_EAJiwPZeEee8L_xzQWUbWg" target="__LwxQPZeEee8L_xzQWUbWg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4hsQgPZfEee8L_xzQWUbWg" name="Uzytkownik:przegladajPrenumeraty()" source="_EAJiwPZeEee8L_xzQWUbWg" target="__LwxQPZeEee8L_xzQWUbWg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_EAJiwPZeEee8L_xzQWUbWg" name="Initial1"/>
-      <subvertex xmi:type="uml:State" xmi:id="_ZXyZQPZfEee8L_xzQWUbWg" name="State1">
+      <subvertex xmi:type="uml:State" xmi:id="_ZXyZQPZfEee8L_xzQWUbWg" name="ObslugaKupnaPrenumeraty">
         <region xmi:type="uml:Region" xmi:id="_Zs4fgfZfEee8L_xzQWUbWg" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_CQvvwPZgEee8L_xzQWUbWg" name="/wybierz inna prenumerate" source="__LwxQPZeEee8L_xzQWUbWg" target="__LwxQPZeEee8L_xzQWUbWg"/>
-          <transition xmi:type="uml:Transition" xmi:id="_LpfAwPZgEee8L_xzQWUbWg" name="Potwierdź prenumerate" source="__LwxQPZeEee8L_xzQWUbWg" target="_FPt3wPZfEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_LpfAwPZgEee8L_xzQWUbWg" name="Uzytkownik:zakupPrenumeraty()" source="__LwxQPZeEee8L_xzQWUbWg" target="_FPt3wPZfEee8L_xzQWUbWg"/>
           <transition xmi:type="uml:Transition" xmi:id="_bn6MUPZgEee8L_xzQWUbWg" name="[określono okres, typ i ilość]/przejdź do podsumowania" source="_FPt3wPZfEee8L_xzQWUbWg" target="_Ky2JIPZfEee8L_xzQWUbWg"/>
           <transition xmi:type="uml:Transition" xmi:id="_lhQQAPZgEee8L_xzQWUbWg" name="/edytuj zamówienie" source="_Ky2JIPZfEee8L_xzQWUbWg" target="_FPt3wPZfEee8L_xzQWUbWg"/>
-          <transition xmi:type="uml:Transition" xmi:id="_yeQR8PZgEee8L_xzQWUbWg" name="/przejdź do płatności" source="_Ky2JIPZfEee8L_xzQWUbWg" target="_N_XvgPZfEee8L_xzQWUbWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yeQR8PZgEee8L_xzQWUbWg" name="RealizatorPlatnosci:zlozZamowienie()" source="_Ky2JIPZfEee8L_xzQWUbWg" target="_N_XvgPZfEee8L_xzQWUbWg"/>
           <transition xmi:type="uml:Transition" xmi:id="_2_Y60PZgEee8L_xzQWUbWg" name="Płatność dokonana" source="_N_XvgPZfEee8L_xzQWUbWg" target="_lN1PoPZeEee8L_xzQWUbWg"/>
           <subvertex xmi:type="uml:State" xmi:id="__LwxQPZeEee8L_xzQWUbWg" name="WybieraniePrenumeraty"/>
           <subvertex xmi:type="uml:State" xmi:id="_FPt3wPZfEee8L_xzQWUbWg" name="ZamawianiePrenumeraty"/>
@@ -1086,6 +1092,89 @@
   </packagedElement>
   <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_G6JqwPbXEeeFYMtSjL0VSA" name="InstanceSpecification20">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HKga8PbXEeeFYMtSjL0VSA" source="InstanceEnd" references="_F3mWwPOkEeeMQcwbqLW_-A _m8nFQPOjEeeMQcwbqLW_-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_WG5JEABLEeiMiOF6PevLew" name="NewspaperStates">
+    <region xmi:type="uml:Region" xmi:id="_XIphAABLEeiMiOF6PevLew" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_wfcloABVEeiMiOF6PevLew" source="_Ja9S4ABUEeiMiOF6PevLew" target="_uXGZEABVEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_0U0UsABVEeiMiOF6PevLew" name="Konto:zaloguj()" source="_uXGZEABVEeiMiOF6PevLew" target="_zT3DcABUEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4zgtkABVEeiMiOF6PevLew" name="Konto:zarejestruj()" source="_uXGZEABVEeiMiOF6PevLew" target="_zBwm0ABUEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_JHGQ0ABWEeiMiOF6PevLew" source="_zT3DcABUEeiMiOF6PevLew" target="_HteygABWEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MOp3oABWEeiMiOF6PevLew" name="[niezarejestrowany]" source="_HteygABWEeiMiOF6PevLew" target="_zBwm0ABUEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_upFrgABWEeiMiOF6PevLew" source="_HteygABWEeiMiOF6PevLew" target="_tDPvEABWEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7GAfMABWEeiMiOF6PevLew" name="[zarejestrowany AND user == User]" source="_tDPvEABWEeiMiOF6PevLew" target="_wCaO4ABWEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7iiDIABWEeiMiOF6PevLew" name="[zarejestrowany AND user == Moderator]" source="_tDPvEABWEeiMiOF6PevLew" target="_vk8PwABWEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_9E1jYABWEeiMiOF6PevLew" name="[zarejestrowany AND user == Administrator]" source="_tDPvEABWEeiMiOF6PevLew" target="_wUoAQABWEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_q67iQABXEeiMiOF6PevLew" source="_wCaO4ABWEeiMiOF6PevLew" target="_hPCEsABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_reC2YABXEeiMiOF6PevLew" name="Czytelnik:przegladajArtykuly()" source="_hPCEsABXEeiMiOF6PevLew" target="_ichLgABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_sULNIABXEeiMiOF6PevLew" name="Czytelnik:zakupPrenumeraty()" source="_hPCEsABXEeiMiOF6PevLew" target="_iuGDsABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tNWQ0ABXEeiMiOF6PevLew" name="Konto:wyloguj()" source="_hPCEsABXEeiMiOF6PevLew" target="_jB-B8ABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_PLGvwABYEeiMiOF6PevLew" source="_jB-B8ABXEeiMiOF6PevLew" target="_MtwjkABYEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="__J6uoABYEeiMiOF6PevLew" source="_ichLgABXEeiMiOF6PevLew" target="_hPCEsABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_AudDgABZEeiMiOF6PevLew" source="_iuGDsABXEeiMiOF6PevLew" target="_hPCEsABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QpBp0ABZEeiMiOF6PevLew" source="_vk8PwABWEeiMiOF6PevLew" target="_OVgvEABZEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_SMx7kABZEeiMiOF6PevLew" source="_wUoAQABWEeiMiOF6PevLew" target="_OoyQYABZEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_g7_iAABZEeiMiOF6PevLew" name="Prosba o dodanie art." source="_OVgvEABZEeiMiOF6PevLew" target="_aPyIsABZEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qaxJkABZEeiMiOF6PevLew" name="Konto:wyloguj()" source="_OVgvEABZEeiMiOF6PevLew" target="_jB-B8ABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tmk6EABgEeiMiOF6PevLew" name="Prosba o dodanie prenum." source="_OVgvEABZEeiMiOF6PevLew" target="_rmRPMABgEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_23P0MABgEeiMiOF6PevLew" source="_rmRPMABgEeiMiOF6PevLew" target="_OVgvEABZEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_3hOlUABgEeiMiOF6PevLew" source="_aPyIsABZEeiMiOF6PevLew" target="_OVgvEABZEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="__cH_UABgEeiMiOF6PevLew" name="Konto:wyloguj()" source="_OoyQYABZEeiMiOF6PevLew" target="_jB-B8ABXEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GEA5UABhEeiMiOF6PevLew" name="Administrator:zatrzymaj()" source="_OoyQYABZEeiMiOF6PevLew" target="_-oFTQABgEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HZcbMABhEeiMiOF6PevLew" source="_-oFTQABgEeiMiOF6PevLew" target="_OoyQYABZEeiMiOF6PevLew"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Ja9S4ABUEeiMiOF6PevLew" name="Initial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_zBwm0ABUEeiMiOF6PevLew" name="Rejestracja"/>
+      <subvertex xmi:type="uml:State" xmi:id="_zT3DcABUEeiMiOF6PevLew" name="Logowanie"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_uXGZEABVEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_HteygABWEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_tDPvEABWEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vk8PwABWEeiMiOF6PevLew" name="ZalogowanyModerator"/>
+      <subvertex xmi:type="uml:State" xmi:id="_wCaO4ABWEeiMiOF6PevLew" name="ZalogowanyUzytkownik"/>
+      <subvertex xmi:type="uml:State" xmi:id="_wUoAQABWEeiMiOF6PevLew" name="ZalogowanyAdministrator"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_hPCEsABXEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ichLgABXEeiMiOF6PevLew" name="PrzegladanieArtykulow"/>
+      <subvertex xmi:type="uml:State" xmi:id="_iuGDsABXEeiMiOF6PevLew" name="KupowaniePrenumeraty" submachine="_1Lv6UPZdEee8L_xzQWUbWg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jB-B8ABXEeiMiOF6PevLew" name="Wylogowany"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_MtwjkABYEeiMiOF6PevLew" name="Final"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_OVgvEABZEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_OoyQYABZEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_aPyIsABZEeiMiOF6PevLew" name="DodawanieArtykulu"/>
+      <subvertex xmi:type="uml:State" xmi:id="_rmRPMABgEeiMiOF6PevLew" name="DodawaniePrenumeraty"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-oFTQABgEeiMiOF6PevLew" name="Reset"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_mCr1YABhEeiMiOF6PevLew" name="DodawaniePrenumeraty">
+    <region xmi:type="uml:Region" xmi:id="_nPEI8ABhEeiMiOF6PevLew" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_3J9fYABhEeiMiOF6PevLew" name="  Wydawnictwo:poprosoDodaniePrenumeraty()" source="_oM5qMABhEeiMiOF6PevLew" target="_pxj64ABhEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_3jeyoABhEeiMiOF6PevLew" name="Moderator:zatwierdzUsunieciePrenumeraty()" source="_GYSqwABiEeiMiOF6PevLew" target="_qTZcoABhEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4evhAABhEeiMiOF6PevLew" name="Moderator:zatwierdzPrenumerate()" source="_GYSqwABiEeiMiOF6PevLew" target="_qETQsABhEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IoLpwABiEeiMiOF6PevLew" source="_pxj64ABhEeiMiOF6PevLew" target="_GYSqwABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_PcBVEABiEeiMiOF6PevLew" source="_qTZcoABhEeiMiOF6PevLew" target="_N1tekABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Qng30ABiEeiMiOF6PevLew" source="_qETQsABhEeiMiOF6PevLew" target="_N1tekABiEeiMiOF6PevLew"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_oM5qMABhEeiMiOF6PevLew" name="Initial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_pxj64ABhEeiMiOF6PevLew" name="Dodawana"/>
+      <subvertex xmi:type="uml:State" xmi:id="_qETQsABhEeiMiOF6PevLew" name="Dodana"/>
+      <subvertex xmi:type="uml:State" xmi:id="_qTZcoABhEeiMiOF6PevLew" name="Odrzucona"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_GYSqwABiEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_N1tekABiEeiMiOF6PevLew" name="FinalState"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_eDmCcABiEeiMiOF6PevLew" name="Reset">
+    <region xmi:type="uml:Region" xmi:id="_ewPtEABiEeiMiOF6PevLew" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_uso4UABiEeiMiOF6PevLew" name="Administrator:zatrzymaj()" source="_r-hFMABiEeiMiOF6PevLew" target="_s6EHcABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_SeLMkABkEeiMiOF6PevLew" name="/wykonaj kopie" source="_s6EHcABiEeiMiOF6PevLew" target="_yRsTcABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_bzadoABkEeiMiOF6PevLew" source="_yRsTcABiEeiMiOF6PevLew" target="_Z3m4QABkEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eOTLsABkEeiMiOF6PevLew" name="[Adminstrator:bladPrzyTworzeniuKopii == TRUE]" source="_Z3m4QABkEeiMiOF6PevLew" target="_s6EHcABiEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ofHUMABkEeiMiOF6PevLew" name="[else]/Administrator:potwierdzUtworzenieKopii()" source="_Z3m4QABkEeiMiOF6PevLew" target="_m5KqEABkEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_sipbEABkEeiMiOF6PevLew" name="Administrator:wznow()" source="_m5KqEABkEeiMiOF6PevLew" target="_qxY40ABkEeiMiOF6PevLew"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tfKGoABkEeiMiOF6PevLew" source="_qxY40ABkEeiMiOF6PevLew" target="_rwQ74ABkEeiMiOF6PevLew"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_r-hFMABiEeiMiOF6PevLew" name="Initial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_s6EHcABiEeiMiOF6PevLew" name="Zatrzymany"/>
+      <subvertex xmi:type="uml:State" xmi:id="_yRsTcABiEeiMiOF6PevLew" name="SprawdzanieKopii"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Z3m4QABkEeiMiOF6PevLew" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_m5KqEABkEeiMiOF6PevLew" name="KopiaPotwierdzona"/>
+      <subvertex xmi:type="uml:State" xmi:id="_qxY40ABkEeiMiOF6PevLew" name="Wznowiony"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_rwQ74ABkEeiMiOF6PevLew" name="FinalState"/>
+    </region>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-AAsoPZaEee8L_xzQWUbWg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-ACh0PZaEee8L_xzQWUbWg" source="http://www.eclipse.org/uml2/2.0.0/UML">
